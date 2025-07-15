@@ -42,6 +42,46 @@ let fileCache: { data: RadioData | null; timestamp: number } = {
 };
 const FILE_CACHE_TTL = 5 * 60 * 1000; // 5 minutos
 
+// Función auxiliar para comparar horas en formato "HH:MM"
+function compareTimeStrings(time1: string, time2: string): number {
+  const [hours1, minutes1] = time1.split(':').map(Number);
+  const [hours2, minutes2] = time2.split(':').map(Number);
+  
+  if (hours1 !== hours2) {
+    return hours1 - hours2;
+  }
+  
+  return minutes1 - minutes2;
+}
+
+// Función para ordenar programas por días y horario
+function sortPrograms(programs: Program[]): Program[] {
+  // Orden de días de la semana (comenzando con Lunes)
+  const dayOrder: { [key: string]: number } = {
+    'Lunes': 0,
+    'Martes': 1,
+    'Miércoles': 2,
+    'Jueves': 3,
+    'Viernes': 4,
+    'Sábado': 5,
+    'Domingo': 6
+  };
+
+  return [...programs].sort((a, b) => {
+    // Primero ordenar por el primer día de emisión
+    const firstDayA = a.days[0] || '';
+    const firstDayB = b.days[0] || '';
+    
+    const dayComparison = dayOrder[firstDayA] - dayOrder[firstDayB];
+    if (dayComparison !== 0) {
+      return dayComparison;
+    }
+    
+    // Si los días son iguales, ordenar por hora de inicio
+    return compareTimeStrings(a.start_time, b.start_time);
+  });
+}
+
 // Inicializar archivo de datos si no existe
 async function initDataFile() {
   try {
@@ -191,6 +231,9 @@ async function initDataFile() {
       }
     }
     
+    // Ordenar los programas antes de guardarlos
+    initialData.programs = sortPrograms(initialData.programs);
+    
     await fs.writeFile(DATA_FILE, JSON.stringify(initialData, null, 2));
     console.log(`✅ Archivo data.json creado con ${initialData.programs.length} programas`);
   }
@@ -261,8 +304,9 @@ export async function getPrograms(): Promise<Program[]> {
   }
   
   const data = await readData();
-  programsCacheUtils.set(cacheKey, data.programs);
-  return data.programs;
+  const sortedPrograms = sortPrograms(data.programs);
+  programsCacheUtils.set(cacheKey, sortedPrograms);
+  return sortedPrograms;
 }
 
 // Obtener programas por estación (con caché)
@@ -277,8 +321,9 @@ export async function getProgramsByStation(stationId: string): Promise<Program[]
   
   const data = await readData();
   const programs = data.programs.filter(p => p.station_id === stationId);
-  programsCacheUtils.set(cacheKey, programs);
-  return programs;
+  const sortedPrograms = sortPrograms(programs);
+  programsCacheUtils.set(cacheKey, sortedPrograms);
+  return sortedPrograms;
 }
 
 // Obtener programa actual (con caché corto)
@@ -382,7 +427,13 @@ export async function createProgram(program: Omit<Program, 'id'>): Promise<Progr
     ...program,
     id: Date.now().toString()
   };
+  
+  // Agregar el nuevo programa
   data.programs.push(newProgram);
+  
+  // Ordenar programas antes de guardar
+  data.programs = sortPrograms(data.programs);
+  
   await writeData(data);
   
   // Invalidar cachés específicos
@@ -401,6 +452,10 @@ export async function updateProgram(id: string, updates: Partial<Program>): Prom
   
   const oldProgram = data.programs[index];
   data.programs[index] = { ...oldProgram, ...updates };
+  
+  // Ordenar programas antes de guardar
+  data.programs = sortPrograms(data.programs);
+  
   await writeData(data);
   
   // Invalidar cachés específicos

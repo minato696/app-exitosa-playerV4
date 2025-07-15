@@ -1,7 +1,7 @@
 // src/app/admin/page.tsx
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { Save, Trash2, Plus, Upload, X, Clock, Calendar, Music, Radio, LogOut, Edit2, BarChart } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import StationsManager from '@/components/StationsManager';
@@ -103,15 +103,51 @@ export default function AdminPanel() {
   // Filtrar programas por estación
   const filteredPrograms = programs.filter(p => p.station_id === selectedStation);
   
+  // Ordenar programas por día y hora
+  const sortedPrograms = useMemo(() => {
+    // Orden de días de la semana
+    const dayOrder: { [key: string]: number } = {
+      'Lunes': 0,
+      'Martes': 1,
+      'Miércoles': 2,
+      'Jueves': 3,
+      'Viernes': 4,
+      'Sábado': 5,
+      'Domingo': 6
+    };
+
+    return [...filteredPrograms].sort((a, b) => {
+      // Primero ordenar por el primer día de emisión
+      const firstDayA = a.days[0] || '';
+      const firstDayB = b.days[0] || '';
+      
+      const dayComparison = dayOrder[firstDayA] - dayOrder[firstDayB];
+      if (dayComparison !== 0) {
+        return dayComparison;
+      }
+      
+      // Si los días son iguales, ordenar por hora de inicio
+      const [hoursA, minutesA] = a.start_time.split(':').map(Number);
+      const [hoursB, minutesB] = b.start_time.split(':').map(Number);
+      
+      if (hoursA !== hoursB) {
+        return hoursA - hoursB;
+      }
+      
+      return minutesA - minutesB;
+    });
+  }, [filteredPrograms]);
+  
   // Debug
   useEffect(() => {
     console.log('Estado actual:', {
       selectedStation,
       totalPrograms: programs.length,
       filteredPrograms: filteredPrograms.length,
+      sortedPrograms: sortedPrograms.length,
       stations: stations.map(s => ({ id: s.id, name: s.name }))
     });
-  }, [selectedStation, programs, stations]);
+  }, [selectedStation, programs, stations, sortedPrograms]);
 
   // Manejar cambios en el formulario
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
@@ -624,7 +660,7 @@ export default function AdminPanel() {
                   <Music className="w-5 h-5" />
                   Programas de {stations.find(s => s.id === selectedStation)?.name || 'Cargando...'}
                   <span className="text-sm font-normal text-gray-600">
-                    ({filteredPrograms.length} programas)
+                    ({sortedPrograms.length} programas)
                   </span>
                 </h2>
               </div>
@@ -650,13 +686,13 @@ export default function AdminPanel() {
                       </div>
                     )}
                     
-                    {programs.length > 0 && filteredPrograms.length === 0 && (
+                    {programs.length > 0 && sortedPrograms.length === 0 && (
                       <div className="p-6 text-center text-gray-500">
                         No hay programas registrados para esta estación
                       </div>
                     )}
                     
-                    {filteredPrograms.map(program => (
+                    {sortedPrograms.map(program => (
                       <div 
                         key={program.id} 
                         className={`p-6 flex items-center gap-4 transition-all ${

@@ -1,56 +1,75 @@
-// src/app/[stationId]/page.tsx
-import { getStations } from '@/lib/dataManager';
+'use client';
+
+import { useParams } from 'next/navigation';
+import { useEffect } from 'react';
 import RadioPlayer from '@/components/RadioPlayer';
-import { notFound } from 'next/navigation';
-import { Metadata } from 'next';
 
-// Esta función se ejecuta en el servidor para verificar que la estación exista
-export async function generateStaticParams() {
-  const stations = await getStations();
-  return stations.map((station) => ({
-    stationId: station.id,
-  }));
-}
-
-// Generación dinámica de metadatos para SEO
-export async function generateMetadata({ 
-  params 
-}: { 
-  params: { stationId: Promise<string> | string } 
-}): Promise<Metadata> {
-  const stationId = await Promise.resolve(params.stationId);
-  
-  const stations = await getStations();
-  const station = stations.find(s => s.id === stationId);
-  
-  if (!station) {
-    return {
-      title: 'Estación no encontrada - Radio Exitosa',
-    };
+// Mapeo detallado de estaciones con información SEO
+const stationInfo: Record<string, {
+  name: string;
+  frequency: string;
+  description: string;
+}> = {
+  lima: {
+    name: 'Lima',
+    frequency: '95.5 FM',
+    description: 'La estación principal de Radio Exitosa en la capital del Perú'
+  },
+  arequipa: {
+    name: 'Arequipa',
+    frequency: '104.9 FM',
+    description: 'Transmitiendo desde la Ciudad Blanca'
+  },
+  trujillo: {
+    name: 'Trujillo',
+    frequency: '103.3 FM',
+    description: 'La voz de la Ciudad de la Eterna Primavera'
+  },
+  chiclayo: {
+    name: 'Chiclayo',
+    frequency: '98.9 FM',
+    description: 'Conectando con el norte del Perú'
   }
-  
-  return {
-    title: `Radio Exitosa ${station.name} ${station.frequency || ''}`,
-    description: station.description || `Escucha Radio Exitosa ${station.name} en vivo - ${station.frequency || ''}`,
-  };
-}
+};
 
-export default async function StationPage({ 
-  params 
-}: { 
-  params: { stationId: Promise<string> | string } 
-}) {
-  const stationId = await Promise.resolve(params.stationId);
+export default function StationPage() {
+  const params = useParams();
   
-  // Verificar que la estación existe
-  const stations = await getStations();
-  const stationExists = stations.some(station => station.id === stationId);
+  useEffect(() => {
+    if (params?.stationId) {
+      // Obtener el ID de la estación
+      const id = Array.isArray(params.stationId) ? params.stationId[0] : params.stationId as string;
+      
+      console.log('Estación ID:', id); // Log para debug
+      
+      // Verificar si la estación existe en nuestro mapeo
+      if (stationInfo[id]) {
+        const station = stationInfo[id];
+        
+        console.log('Encontrada estación:', station); // Log para debug
+        
+        // Actualizar el título con el nombre, frecuencia y eslogan
+        const newTitle = `Radio Exitosa - ${station.name} ${station.frequency} | La Voz que Integra al Perú`;
+        console.log('Nuevo título:', newTitle); // Log para debug
+        
+        // Usar setTimeout para asegurar que el título se actualice después de que el DOM esté listo
+        setTimeout(() => {
+          document.title = newTitle;
+          console.log('Título actualizado a:', document.title); // Log para debug
+        }, 100);
+        
+        // Actualizar la meta descripción para SEO
+        const metaDescription = document.querySelector('meta[name="description"]');
+        if (metaDescription) {
+          metaDescription.setAttribute('content', 
+            `Escucha Radio Exitosa ${station.name} en vivo - ${station.frequency}. Noticias, información y debate. ${station.description}. La Voz que Integra al Perú.`
+          );
+        }
+      } else {
+        console.log('Estación no encontrada en el mapeo:', id); // Log para debug
+      }
+    }
+  }, [params]);
   
-  // Si la estación no existe, devolver 404
-  if (!stationExists) {
-    notFound();
-  }
-  
-  // No necesitamos pasar props, el contexto maneja la estación
   return <RadioPlayer />;
 }

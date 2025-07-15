@@ -16,7 +16,10 @@ const nextConfig: NextConfig = {
     domains: getImageDomains(),
   },
   // Permitir orígenes de desarrollo para corregir el warning
-  allowedDevOrigins: ['http://localhost:9544', 'http://185.236.232.32:9544'],
+  allowedDevOrigins: [
+    'http://localhost:9544', 
+    'http://192.168.10.230:9544'
+  ],
   // Configura el dominio público para que sea accesible correctamente
   publicRuntimeConfig: {
     basePath: '',

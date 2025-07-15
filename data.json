@@ -55,8 +55,104 @@
       ]
     },
     {
+      "id": "43",
+      "station_id": "arequipa",
+      "name": "La Hora Esotérica",
+      "host": "Soralla De Los Angeles",
+      "start_time": "00:00",
+      "end_time": "01:00",
+      "image": "",
+      "days": [
+        "Lunes",
+        "Martes",
+        "Miércoles",
+        "Jueves",
+        "Viernes"
+      ]
+    },
+    {
+      "id": "85",
+      "station_id": "trujillo",
+      "name": "La Hora Esotérica",
+      "host": "Soralla De Los Angeles",
+      "start_time": "00:00",
+      "end_time": "01:00",
+      "image": "/api/image-resizer?image=L2ltYWdlcy9wcm9ncmFtcy8xNzUyMjY2NjU5MzY5LWhzY2h4Yy5qcGc=&width=600&quality=85",
+      "days": [
+        "Lunes",
+        "Martes",
+        "Miércoles",
+        "Jueves",
+        "Viernes"
+      ]
+    },
+    {
+      "id": "127",
+      "station_id": "chiclayo",
+      "name": "La Hora Esotérica",
+      "host": "Soralla De Los Angeles",
+      "start_time": "00:00",
+      "end_time": "01:00",
+      "image": "",
+      "days": [
+        "Lunes",
+        "Martes",
+        "Miércoles",
+        "Jueves",
+        "Viernes"
+      ]
+    },
+    {
       "id": "2",
       "station_id": "lima",
+      "name": "Usted Tiene Derecho",
+      "host": "Mario Camacho Perla",
+      "start_time": "01:00",
+      "end_time": "02:00",
+      "image": "",
+      "days": [
+        "Lunes",
+        "Martes",
+        "Miércoles",
+        "Jueves",
+        "Viernes"
+      ]
+    },
+    {
+      "id": "44",
+      "station_id": "arequipa",
+      "name": "Usted Tiene Derecho",
+      "host": "Mario Camacho Perla",
+      "start_time": "01:00",
+      "end_time": "02:00",
+      "image": "",
+      "days": [
+        "Lunes",
+        "Martes",
+        "Miércoles",
+        "Jueves",
+        "Viernes"
+      ]
+    },
+    {
+      "id": "86",
+      "station_id": "trujillo",
+      "name": "Usted Tiene Derecho",
+      "host": "Mario Camacho Perla",
+      "start_time": "01:00",
+      "end_time": "02:00",
+      "image": "/api/image-resizer?image=L2ltYWdlcy9wcm9ncmFtcy8xNzUyMjY2NjcwMzUxLWd4MWE2YS5qcGc=&width=600&quality=85",
+      "days": [
+        "Lunes",
+        "Martes",
+        "Miércoles",
+        "Jueves",
+        "Viernes"
+      ]
+    },
+    {
+      "id": "128",
+      "station_id": "chiclayo",
       "name": "Usted Tiene Derecho",
       "host": "Mario Camacho Perla",
       "start_time": "01:00",
@@ -87,548 +183,77 @@
       ]
     },
     {
-      "id": "4",
-      "station_id": "lima",
-      "name": "Exitosa Perú",
-      "host": "Pedro Paredes",
-      "start_time": "05:00",
-      "end_time": "08:00",
-      "image": "",
-      "days": [
-        "Lunes",
-        "Martes",
-        "Miércoles",
-        "Jueves",
-        "Viernes"
-      ]
-    },
-    {
-      "id": "5",
-      "station_id": "lima",
-      "name": "Hablemos Claro",
-      "host": "Nicolás Lúcar",
-      "start_time": "08:00",
-      "end_time": "11:00",
-      "image": "/api/image-resizer?image=L2ltYWdlcy9wcm9ncmFtcy8xNzUyMjQ1MjAxOTQ1LXpsdzEyaS5qcGc=&width=600&quality=85",
-      "days": [
-        "Lunes",
-        "Martes",
-        "Miércoles",
-        "Jueves",
-        "Viernes"
-      ]
-    },
-    {
-      "id": "6",
-      "station_id": "lima",
-      "name": "Exitosa Te Escucha",
-      "host": "Katyusca Torres Aybar",
-      "start_time": "11:00",
-      "end_time": "14:00",
-      "image": "/api/image-resizer?image=L2ltYWdlcy9wcm9ncmFtcy8xNzUyMjUwNTk4MTY2LXZnNmU5Ni5qcGc=&width=600&quality=85",
-      "days": [
-        "Lunes",
-        "Martes",
-        "Miércoles",
-        "Jueves",
-        "Viernes"
-      ]
-    },
-    {
-      "id": "7",
-      "station_id": "lima",
-      "name": "Exitosa Deportes",
-      "host": "Gonzalo Núñez, Óscar Paz y Jean Rodríguez",
-      "start_time": "14:00",
-      "end_time": "16:00",
-      "image": "/api/image-resizer?image=L2ltYWdlcy9wcm9ncmFtcy8xNzUyMjU2NjI5ODgyLTdvaHlwZS5qcGc=&width=600&quality=85",
-      "days": [
-        "Lunes",
-        "Martes",
-        "Miércoles",
-        "Jueves",
-        "Viernes"
-      ]
-    },
-    {
-      "id": "8",
-      "station_id": "lima",
-      "name": "Contra El Tráfico",
-      "host": "Ricardo Rondón",
-      "start_time": "16:00",
-      "end_time": "18:00",
-      "image": "/api/image-resizer?image=L2ltYWdlcy9wcm9ncmFtcy8xNzUyMjU2NjQ1OTM4LXlyNXI5dS5qcGc=&width=600&quality=85",
-      "days": [
-        "Lunes",
-        "Martes",
-        "Miércoles",
-        "Jueves",
-        "Viernes"
-      ]
-    },
-    {
-      "id": "9",
-      "station_id": "lima",
-      "name": "Médicos En Acción",
-      "host": "Armando Massé",
-      "start_time": "18:00",
-      "end_time": "19:00",
-      "image": "/api/image-resizer?image=L2ltYWdlcy9wcm9ncmFtcy8xNzUyMjc1MDE2NDQ4LWpuejhkdC5qcGc=&width=600&quality=85",
-      "days": [
-        "Lunes",
-        "Martes",
-        "Miércoles",
-        "Jueves",
-        "Viernes"
-      ]
-    },
-    {
-      "id": "10",
-      "station_id": "lima",
-      "name": "Informamos y Opinamos",
-      "host": "Karina Novoa",
-      "start_time": "19:00",
-      "end_time": "22:00",
-      "image": "/api/image-resizer?image=L2ltYWdlcy9wcm9ncmFtcy8xNzUyMjc1MDI2NzQxLWlhN2Nmay5qcGc=&width=600&quality=85",
-      "days": [
-        "Lunes",
-        "Martes",
-        "Miércoles",
-        "Jueves",
-        "Viernes"
-      ]
-    },
-    {
-      "id": "11",
-      "station_id": "lima",
-      "name": "Exitosa Noticias",
-      "host": "Juriko Novoa",
-      "start_time": "22:00",
-      "end_time": "23:00",
-      "image": "/api/image-resizer?image=L2ltYWdlcy9wcm9ncmFtcy8xNzUyMjc1MDQ2OTM1LTI5NTJxYy5qcGc=&width=600&quality=85",
-      "days": [
-        "Lunes",
-        "Martes",
-        "Miércoles",
-        "Jueves",
-        "Viernes"
-      ]
-    },
-    {
-      "id": "12",
-      "station_id": "lima",
-      "name": "Despierta Tus Emociones",
-      "host": "José Poicón",
-      "start_time": "23:00",
-      "end_time": "00:00",
-      "image": "/api/image-resizer?image=L2ltYWdlcy9wcm9ncmFtcy8xNzUyMjc1MDY5NDY3LTBzN2RhcC5qcGc=&width=600&quality=85",
-      "days": [
-        "Lunes",
-        "Martes",
-        "Miércoles",
-        "Jueves",
-        "Viernes"
-      ]
-    },
-    {
-      "id": "13",
-      "station_id": "lima",
-      "name": "La Hora Esotérica",
-      "host": "Esotéricos",
-      "start_time": "00:00",
-      "end_time": "01:00",
-      "image": "/api/image-resizer?image=L2ltYWdlcy9wcm9ncmFtcy8xNzUyMjc1MDkzNzcyLXpqbXRoLmpwZw==&width=600&quality=85",
-      "days": [
-        "Sábado"
-      ]
-    },
-    {
-      "id": "14",
-      "station_id": "lima",
-      "name": "Educando Mis Emociones",
-      "host": "Dra. Danila Villegas",
-      "start_time": "01:00",
-      "end_time": "02:00",
-      "image": "",
-      "days": [
-        "Sábado"
-      ]
-    },
-    {
-      "id": "15",
-      "station_id": "lima",
-      "name": "La Voz De Los Pueblos",
-      "host": "Jack Miranda",
-      "start_time": "02:00",
-      "end_time": "05:00",
-      "image": "/api/image-resizer?image=L2ltYWdlcy9wcm9ncmFtcy8xNzUyMjc1MTA1OTM3LTA0dmJkNS5qcGc=&width=600&quality=85",
-      "days": [
-        "Sábado"
-      ]
-    },
-    {
-      "id": "16",
-      "station_id": "lima",
-      "name": "Exitosa Perú",
-      "host": "Pedro Paredes",
-      "start_time": "05:00",
-      "end_time": "08:00",
-      "image": "",
-      "days": [
-        "Sábado"
-      ]
-    },
-    {
-      "id": "17",
-      "station_id": "lima",
-      "name": "Hablemos Claro",
-      "host": "Jesús Verde",
-      "start_time": "08:00",
-      "end_time": "11:00",
-      "image": "",
-      "days": [
-        "Sábado"
-      ]
-    },
-    {
-      "id": "18",
-      "station_id": "lima",
-      "name": "Construyendo Cimientos Para El Futuro",
-      "host": "Jose Cieza",
-      "start_time": "11:00",
-      "end_time": "12:00",
-      "image": "",
-      "days": [
-        "Sábado"
-      ]
-    },
-    {
-      "id": "19",
-      "station_id": "lima",
-      "name": "Derrama Magisterial",
-      "host": "Carlos Cornejo",
-      "start_time": "12:00",
-      "end_time": "13:00",
-      "image": "",
-      "days": [
-        "Sábado"
-      ]
-    },
-    {
-      "id": "20",
-      "station_id": "lima",
-      "name": "Exitosa Deportes",
-      "host": "Óscar Paz",
-      "start_time": "13:00",
-      "end_time": "15:00",
-      "image": "",
-      "days": [
-        "Sábado"
-      ]
-    },
-    {
-      "id": "21",
-      "station_id": "lima",
-      "name": "Exitosa Sábado",
-      "host": "Katyusca Torres Aybar",
-      "start_time": "15:00",
-      "end_time": "18:00",
-      "image": "",
-      "days": [
-        "Sábado"
-      ]
-    },
-    {
-      "id": "22",
-      "station_id": "lima",
-      "name": "La Hora Del Volante",
-      "host": "Tito Alvites",
-      "start_time": "18:00",
-      "end_time": "20:00",
-      "image": "",
-      "days": [
-        "Sábado"
-      ]
-    },
-    {
-      "id": "23",
-      "station_id": "lima",
-      "name": "Exitosa Te Escucha",
-      "host": "Jorge Valdez",
-      "start_time": "20:00",
-      "end_time": "22:00",
-      "image": "",
-      "days": [
-        "Sábado"
-      ]
-    },
-    {
-      "id": "24",
-      "station_id": "lima",
-      "name": "Noche Esotérica",
-      "host": "Vidente Hayimy",
-      "start_time": "22:00",
-      "end_time": "00:00",
-      "image": "",
-      "days": [
-        "Sábado"
-      ]
-    },
-    {
-      "id": "25",
-      "station_id": "lima",
-      "name": "Noche Esotérica",
-      "host": "Vidente Hayimy",
-      "start_time": "00:00",
-      "end_time": "01:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "26",
-      "station_id": "lima",
-      "name": "La Voz de los Pueblos",
-      "host": "Hierbero",
-      "start_time": "01:00",
-      "end_time": "02:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "27",
-      "station_id": "lima",
-      "name": "La Voz de los Pueblos",
-      "host": "Marcial de la Cruz",
-      "start_time": "02:00",
-      "end_time": "06:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "28",
-      "station_id": "lima",
-      "name": "Exitosa Perú",
-      "host": "Piura",
-      "start_time": "06:00",
-      "end_time": "07:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "29",
-      "station_id": "lima",
-      "name": "Exitosa Perú",
-      "host": "Cusco",
-      "start_time": "07:00",
-      "end_time": "08:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "30",
-      "station_id": "lima",
-      "name": "Exitosa Perú",
-      "host": "Arequipa",
-      "start_time": "08:00",
-      "end_time": "09:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "31",
-      "station_id": "lima",
-      "name": "Exitosa Perú",
-      "host": "Trujillo",
-      "start_time": "09:00",
-      "end_time": "10:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "32",
-      "station_id": "lima",
-      "name": "En Defensa de la Verdad",
-      "host": "Cecilia García",
-      "start_time": "10:00",
-      "end_time": "12:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "33",
-      "station_id": "lima",
-      "name": "Exitosa Perú",
-      "host": "Chiclayo",
-      "start_time": "12:00",
-      "end_time": "13:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "34",
-      "station_id": "lima",
-      "name": "Exitosa Perú",
-      "host": "Huancayo",
-      "start_time": "13:00",
-      "end_time": "14:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "35",
-      "station_id": "lima",
-      "name": "Exitosa Perú",
-      "host": "Huacho",
-      "start_time": "14:00",
-      "end_time": "15:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "36",
-      "station_id": "lima",
-      "name": "Exitosa Perú",
-      "host": "Ica",
-      "start_time": "15:00",
-      "end_time": "16:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "37",
-      "station_id": "lima",
-      "name": "Exitosa Perú",
-      "host": "Iquitos",
-      "start_time": "16:00",
-      "end_time": "17:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "38",
-      "station_id": "lima",
-      "name": "Exitosa Perú",
-      "host": "Tacna",
-      "start_time": "17:00",
-      "end_time": "18:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "39",
-      "station_id": "lima",
-      "name": "Exitosa Perú",
-      "host": "Tarapoto",
-      "start_time": "18:00",
-      "end_time": "19:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "40",
-      "station_id": "lima",
-      "name": "Médicos en Acción",
-      "host": "Daniel Bueno",
-      "start_time": "19:00",
-      "end_time": "21:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "41",
-      "station_id": "lima",
-      "name": "Exitosa Deportes",
-      "host": "Óscar Paz",
-      "start_time": "21:00",
-      "end_time": "22:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "42",
-      "station_id": "lima",
-      "name": "Noche Esotérica",
-      "host": "Vidente Hayimy",
-      "start_time": "22:00",
-      "end_time": "00:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "43",
-      "station_id": "arequipa",
-      "name": "La Hora Esotérica",
-      "host": "Soralla De Los Angeles",
-      "start_time": "00:00",
-      "end_time": "01:00",
-      "image": "",
-      "days": [
-        "Lunes",
-        "Martes",
-        "Miércoles",
-        "Jueves",
-        "Viernes"
-      ]
-    },
-    {
-      "id": "44",
-      "station_id": "arequipa",
-      "name": "Usted Tiene Derecho",
-      "host": "Mario Camacho Perla",
-      "start_time": "01:00",
-      "end_time": "02:00",
-      "image": "",
-      "days": [
-        "Lunes",
-        "Martes",
-        "Miércoles",
-        "Jueves",
-        "Viernes"
-      ]
-    },
-    {
       "id": "45",
       "station_id": "arequipa",
       "name": "La Voz De Los Pueblos",
       "host": "Jack Miranda y Marcial De La Cruz",
       "start_time": "02:00",
       "end_time": "05:00",
+      "image": "",
+      "days": [
+        "Lunes",
+        "Martes",
+        "Miércoles",
+        "Jueves",
+        "Viernes"
+      ]
+    },
+    {
+      "id": "87",
+      "station_id": "trujillo",
+      "name": "La Voz De Los Pueblos",
+      "host": "Jack Miranda y Marcial De La Cruz",
+      "start_time": "02:00",
+      "end_time": "05:00",
+      "image": "/api/image-resizer?image=L2ltYWdlcy9wcm9ncmFtcy8xNzUyMjY2Njc4ODcxLXJqeGYzbC5qcGc=&width=600&quality=85",
+      "days": [
+        "Lunes",
+        "Martes",
+        "Miércoles",
+        "Jueves",
+        "Viernes"
+      ]
+    },
+    {
+      "id": "129",
+      "station_id": "chiclayo",
+      "name": "La Voz De Los Pueblos",
+      "host": "Jack Miranda y Marcial De La Cruz",
+      "start_time": "02:00",
+      "end_time": "05:00",
+      "image": "",
+      "days": [
+        "Lunes",
+        "Martes",
+        "Miércoles",
+        "Jueves",
+        "Viernes"
+      ]
+    },
+    {
+      "station_id": "lima",
+      "name": "TEST",
+      "host": "TEST",
+      "start_time": "02:52",
+      "end_time": "02:59",
+      "image": "/api/image-resizer?image=L2ltYWdlcy9wcm9ncmFtcy8xNzUyNTk5NzQ5MTMzLXNqODdncC5qcGc=&width=600&quality=85",
+      "days": [
+        "Lunes",
+        "Martes",
+        "Miércoles",
+        "Jueves",
+        "Viernes",
+        "Sábado"
+      ],
+      "id": "1752599751345"
+    },
+    {
+      "id": "4",
+      "station_id": "lima",
+      "name": "Exitosa Perú",
+      "host": "Pedro Paredes",
+      "start_time": "05:00",
+      "end_time": "08:00",
       "image": "",
       "days": [
         "Lunes",
@@ -655,542 +280,6 @@
       ]
     },
     {
-      "id": "47",
-      "station_id": "arequipa",
-      "name": "Hablemos Claro",
-      "host": "Nicolás Lúcar",
-      "start_time": "08:00",
-      "end_time": "11:00",
-      "image": "",
-      "days": [
-        "Lunes",
-        "Martes",
-        "Miércoles",
-        "Jueves",
-        "Viernes"
-      ]
-    },
-    {
-      "id": "48",
-      "station_id": "arequipa",
-      "name": "Exitosa Te Escucha",
-      "host": "Katyusca Torres Aybar",
-      "start_time": "11:00",
-      "end_time": "14:00",
-      "image": "",
-      "days": [
-        "Lunes",
-        "Martes",
-        "Miércoles",
-        "Jueves",
-        "Viernes"
-      ]
-    },
-    {
-      "id": "49",
-      "station_id": "arequipa",
-      "name": "Exitosa Deportes",
-      "host": "Gonzalo Núñez, Óscar Paz y Jean Rodríguez",
-      "start_time": "14:00",
-      "end_time": "16:00",
-      "image": "",
-      "days": [
-        "Lunes",
-        "Martes",
-        "Miércoles",
-        "Jueves",
-        "Viernes"
-      ]
-    },
-    {
-      "id": "50",
-      "station_id": "arequipa",
-      "name": "Contra El Tráfico",
-      "host": "Ricardo Rondón",
-      "start_time": "16:00",
-      "end_time": "18:00",
-      "image": "",
-      "days": [
-        "Lunes",
-        "Martes",
-        "Miércoles",
-        "Jueves",
-        "Viernes"
-      ]
-    },
-    {
-      "id": "51",
-      "station_id": "arequipa",
-      "name": "Médicos En Acción",
-      "host": "Armando Massé",
-      "start_time": "18:00",
-      "end_time": "19:00",
-      "image": "",
-      "days": [
-        "Lunes",
-        "Martes",
-        "Miércoles",
-        "Jueves",
-        "Viernes"
-      ]
-    },
-    {
-      "id": "52",
-      "station_id": "arequipa",
-      "name": "Informamos y Opinamos",
-      "host": "Karina Novoa",
-      "start_time": "19:00",
-      "end_time": "22:00",
-      "image": "",
-      "days": [
-        "Lunes",
-        "Martes",
-        "Miércoles",
-        "Jueves",
-        "Viernes"
-      ]
-    },
-    {
-      "id": "53",
-      "station_id": "arequipa",
-      "name": "Exitosa Noticias",
-      "host": "Juriko Novoa",
-      "start_time": "22:00",
-      "end_time": "23:00",
-      "image": "",
-      "days": [
-        "Lunes",
-        "Martes",
-        "Miércoles",
-        "Jueves",
-        "Viernes"
-      ]
-    },
-    {
-      "id": "54",
-      "station_id": "arequipa",
-      "name": "Despierta Tus Emociones",
-      "host": "José Poicón",
-      "start_time": "23:00",
-      "end_time": "00:00",
-      "image": "",
-      "days": [
-        "Lunes",
-        "Martes",
-        "Miércoles",
-        "Jueves",
-        "Viernes"
-      ]
-    },
-    {
-      "id": "55",
-      "station_id": "arequipa",
-      "name": "La Hora Esotérica",
-      "host": "Esotéricos",
-      "start_time": "00:00",
-      "end_time": "01:00",
-      "image": "",
-      "days": [
-        "Sábado"
-      ]
-    },
-    {
-      "id": "56",
-      "station_id": "arequipa",
-      "name": "Educando Mis Emociones",
-      "host": "Dra. Danila Villegas",
-      "start_time": "01:00",
-      "end_time": "02:00",
-      "image": "",
-      "days": [
-        "Sábado"
-      ]
-    },
-    {
-      "id": "57",
-      "station_id": "arequipa",
-      "name": "La Voz De Los Pueblos",
-      "host": "Jack Miranda",
-      "start_time": "02:00",
-      "end_time": "05:00",
-      "image": "",
-      "days": [
-        "Sábado"
-      ]
-    },
-    {
-      "id": "58",
-      "station_id": "arequipa",
-      "name": "Exitosa Perú",
-      "host": "Pedro Paredes",
-      "start_time": "05:00",
-      "end_time": "08:00",
-      "image": "",
-      "days": [
-        "Sábado"
-      ]
-    },
-    {
-      "id": "59",
-      "station_id": "arequipa",
-      "name": "Hablemos Claro",
-      "host": "Jesús Verde",
-      "start_time": "08:00",
-      "end_time": "11:00",
-      "image": "",
-      "days": [
-        "Sábado"
-      ]
-    },
-    {
-      "id": "60",
-      "station_id": "arequipa",
-      "name": "Construyendo Cimientos Para El Futuro",
-      "host": "Jose Cieza",
-      "start_time": "11:00",
-      "end_time": "12:00",
-      "image": "",
-      "days": [
-        "Sábado"
-      ]
-    },
-    {
-      "id": "61",
-      "station_id": "arequipa",
-      "name": "Derrama Magisterial",
-      "host": "Carlos Cornejo",
-      "start_time": "12:00",
-      "end_time": "13:00",
-      "image": "",
-      "days": [
-        "Sábado"
-      ]
-    },
-    {
-      "id": "62",
-      "station_id": "arequipa",
-      "name": "Exitosa Deportes",
-      "host": "Óscar Paz",
-      "start_time": "13:00",
-      "end_time": "15:00",
-      "image": "",
-      "days": [
-        "Sábado"
-      ]
-    },
-    {
-      "id": "63",
-      "station_id": "arequipa",
-      "name": "Exitosa Sábado",
-      "host": "Katyusca Torres Aybar",
-      "start_time": "15:00",
-      "end_time": "18:00",
-      "image": "",
-      "days": [
-        "Sábado"
-      ]
-    },
-    {
-      "id": "64",
-      "station_id": "arequipa",
-      "name": "La Hora Del Volante",
-      "host": "Tito Alvites",
-      "start_time": "18:00",
-      "end_time": "20:00",
-      "image": "",
-      "days": [
-        "Sábado"
-      ]
-    },
-    {
-      "id": "65",
-      "station_id": "arequipa",
-      "name": "Exitosa Te Escucha",
-      "host": "Jorge Valdez",
-      "start_time": "20:00",
-      "end_time": "22:00",
-      "image": "",
-      "days": [
-        "Sábado"
-      ]
-    },
-    {
-      "id": "66",
-      "station_id": "arequipa",
-      "name": "Noche Esotérica",
-      "host": "Vidente Hayimy",
-      "start_time": "22:00",
-      "end_time": "00:00",
-      "image": "",
-      "days": [
-        "Sábado"
-      ]
-    },
-    {
-      "id": "67",
-      "station_id": "arequipa",
-      "name": "Noche Esotérica",
-      "host": "Vidente Hayimy",
-      "start_time": "00:00",
-      "end_time": "01:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "68",
-      "station_id": "arequipa",
-      "name": "La Voz de los Pueblos",
-      "host": "Hierbero",
-      "start_time": "01:00",
-      "end_time": "02:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "69",
-      "station_id": "arequipa",
-      "name": "La Voz de los Pueblos",
-      "host": "Marcial de la Cruz",
-      "start_time": "02:00",
-      "end_time": "06:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "70",
-      "station_id": "arequipa",
-      "name": "Exitosa Perú",
-      "host": "Piura",
-      "start_time": "06:00",
-      "end_time": "07:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "71",
-      "station_id": "arequipa",
-      "name": "Exitosa Perú",
-      "host": "Cusco",
-      "start_time": "07:00",
-      "end_time": "08:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "72",
-      "station_id": "arequipa",
-      "name": "Exitosa Perú",
-      "host": "Arequipa",
-      "start_time": "08:00",
-      "end_time": "09:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "73",
-      "station_id": "arequipa",
-      "name": "Exitosa Perú",
-      "host": "Trujillo",
-      "start_time": "09:00",
-      "end_time": "10:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "74",
-      "station_id": "arequipa",
-      "name": "En Defensa de la Verdad",
-      "host": "Cecilia García",
-      "start_time": "10:00",
-      "end_time": "12:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "75",
-      "station_id": "arequipa",
-      "name": "Exitosa Perú",
-      "host": "Chiclayo",
-      "start_time": "12:00",
-      "end_time": "13:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "76",
-      "station_id": "arequipa",
-      "name": "Exitosa Perú",
-      "host": "Huancayo",
-      "start_time": "13:00",
-      "end_time": "14:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "77",
-      "station_id": "arequipa",
-      "name": "Exitosa Perú",
-      "host": "Huacho",
-      "start_time": "14:00",
-      "end_time": "15:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "78",
-      "station_id": "arequipa",
-      "name": "Exitosa Perú",
-      "host": "Ica",
-      "start_time": "15:00",
-      "end_time": "16:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "79",
-      "station_id": "arequipa",
-      "name": "Exitosa Perú",
-      "host": "Iquitos",
-      "start_time": "16:00",
-      "end_time": "17:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "80",
-      "station_id": "arequipa",
-      "name": "Exitosa Perú",
-      "host": "Tacna",
-      "start_time": "17:00",
-      "end_time": "18:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "81",
-      "station_id": "arequipa",
-      "name": "Exitosa Perú",
-      "host": "Tarapoto",
-      "start_time": "18:00",
-      "end_time": "19:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "82",
-      "station_id": "arequipa",
-      "name": "Médicos en Acción",
-      "host": "Daniel Bueno",
-      "start_time": "19:00",
-      "end_time": "21:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "83",
-      "station_id": "arequipa",
-      "name": "Exitosa Deportes",
-      "host": "Óscar Paz",
-      "start_time": "21:00",
-      "end_time": "22:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "84",
-      "station_id": "arequipa",
-      "name": "Noche Esotérica",
-      "host": "Vidente Hayimy",
-      "start_time": "22:00",
-      "end_time": "00:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "85",
-      "station_id": "trujillo",
-      "name": "La Hora Esotérica",
-      "host": "Soralla De Los Angeles",
-      "start_time": "00:00",
-      "end_time": "01:00",
-      "image": "/api/image-resizer?image=L2ltYWdlcy9wcm9ncmFtcy8xNzUyMjY2NjU5MzY5LWhzY2h4Yy5qcGc=&width=600&quality=85",
-      "days": [
-        "Lunes",
-        "Martes",
-        "Miércoles",
-        "Jueves",
-        "Viernes"
-      ]
-    },
-    {
-      "id": "86",
-      "station_id": "trujillo",
-      "name": "Usted Tiene Derecho",
-      "host": "Mario Camacho Perla",
-      "start_time": "01:00",
-      "end_time": "02:00",
-      "image": "/api/image-resizer?image=L2ltYWdlcy9wcm9ncmFtcy8xNzUyMjY2NjcwMzUxLWd4MWE2YS5qcGc=&width=600&quality=85",
-      "days": [
-        "Lunes",
-        "Martes",
-        "Miércoles",
-        "Jueves",
-        "Viernes"
-      ]
-    },
-    {
-      "id": "87",
-      "station_id": "trujillo",
-      "name": "La Voz De Los Pueblos",
-      "host": "Jack Miranda y Marcial De La Cruz",
-      "start_time": "02:00",
-      "end_time": "05:00",
-      "image": "/api/image-resizer?image=L2ltYWdlcy9wcm9ncmFtcy8xNzUyMjY2Njc4ODcxLXJqeGYzbC5qcGc=&width=600&quality=85",
-      "days": [
-        "Lunes",
-        "Martes",
-        "Miércoles",
-        "Jueves",
-        "Viernes"
-      ]
-    },
-    {
       "id": "88",
       "station_id": "trujillo",
       "name": "Exitosa Noticias Policiales",
@@ -1207,548 +296,60 @@
       ]
     },
     {
-      "id": "89",
-      "station_id": "trujillo",
-      "name": "Hablemos Claro",
-      "host": "Nicolás Lúcar",
-      "start_time": "09:00",
-      "end_time": "11:00",
-      "image": "/api/image-resizer?image=L2ltYWdlcy9wcm9ncmFtcy8xNzUyMjY2NTY4NjQzLWJpMDF4ay5qcGc=&width=600&quality=85",
-      "days": [
-        "Lunes",
-        "Martes",
-        "Miércoles",
-        "Jueves",
-        "Viernes"
-      ]
-    },
-    {
-      "id": "90",
-      "station_id": "trujillo",
-      "name": "Exitosa Te Escucha",
-      "host": "Luis Aguilar",
-      "start_time": "11:00",
-      "end_time": "14:00",
-      "image": "/api/image-resizer?image=L2ltYWdlcy9wcm9ncmFtcy8xNzUyMjU2ODAzNjk1LXE0dXM1LmpwZw==&width=600&quality=85",
-      "days": [
-        "Lunes",
-        "Martes",
-        "Miércoles",
-        "Jueves",
-        "Viernes"
-      ]
-    },
-    {
-      "id": "91",
-      "station_id": "trujillo",
-      "name": "Exitosa Deportes",
-      "host": "Gonzalo Núñez, Óscar Paz y Jean Rodríguez",
-      "start_time": "14:00",
-      "end_time": "16:00",
-      "image": "/api/image-resizer?image=L2ltYWdlcy9wcm9ncmFtcy8xNzUyMjY2NTkzMTkzLXA5YzY5cC5qcGc=&width=600&quality=85",
-      "days": [
-        "Lunes",
-        "Martes",
-        "Miércoles",
-        "Jueves",
-        "Viernes"
-      ]
-    },
-    {
-      "id": "92",
-      "station_id": "trujillo",
-      "name": "Contra El Tráfico",
-      "host": "Ricardo Rondón",
-      "start_time": "16:00",
-      "end_time": "18:00",
-      "image": "/api/image-resizer?image=L2ltYWdlcy9wcm9ncmFtcy8xNzUyMjY2NjAxODM4LTc5dWl1bi5qcGc=&width=600&quality=85",
-      "days": [
-        "Lunes",
-        "Martes",
-        "Miércoles",
-        "Jueves",
-        "Viernes"
-      ]
-    },
-    {
-      "id": "93",
-      "station_id": "trujillo",
-      "name": "Médicos En Acción",
-      "host": "Armando Massé",
-      "start_time": "18:00",
-      "end_time": "19:00",
-      "image": "/api/image-resizer?image=L2ltYWdlcy9wcm9ncmFtcy8xNzUyMjY2NjEwNjgwLXlqZzR5cS5qcGc=&width=600&quality=85",
-      "days": [
-        "Lunes",
-        "Martes",
-        "Miércoles",
-        "Jueves",
-        "Viernes"
-      ]
-    },
-    {
-      "id": "94",
-      "station_id": "trujillo",
-      "name": "Informamos y Opinamos",
-      "host": "Alan Cabrera",
-      "start_time": "19:00",
-      "end_time": "20:00",
-      "image": "/api/image-resizer?image=L2ltYWdlcy9wcm9ncmFtcy8xNzUyMjU2ODYzNTM0LWpwMnNhcS5qcGc=&width=600&quality=85",
-      "days": [
-        "Lunes",
-        "Martes",
-        "Miércoles",
-        "Jueves",
-        "Viernes"
-      ]
-    },
-    {
-      "id": "95",
-      "station_id": "trujillo",
-      "name": "Exitosa Noticias",
-      "host": "Juriko Novoa",
-      "start_time": "22:00",
-      "end_time": "23:00",
-      "image": "",
-      "days": [
-        "Lunes",
-        "Martes",
-        "Miércoles",
-        "Jueves",
-        "Viernes"
-      ]
-    },
-    {
-      "id": "96",
-      "station_id": "trujillo",
-      "name": "Despierta Tus Emociones",
-      "host": "José Poicón",
-      "start_time": "23:00",
-      "end_time": "00:00",
-      "image": "/api/image-resizer?image=L2ltYWdlcy9wcm9ncmFtcy8xNzUyMjY2NzIxNzY3LXNtaWl5aS5qcGc=&width=600&quality=85",
-      "days": [
-        "Lunes",
-        "Martes",
-        "Miércoles",
-        "Jueves",
-        "Viernes"
-      ]
-    },
-    {
-      "id": "97",
-      "station_id": "trujillo",
-      "name": "La Hora Esotérica",
-      "host": "Esotéricos",
-      "start_time": "00:00",
-      "end_time": "01:00",
-      "image": "",
-      "days": [
-        "Sábado"
-      ]
-    },
-    {
-      "id": "98",
-      "station_id": "trujillo",
-      "name": "Educando Mis Emociones",
-      "host": "Dra. Danila Villegas",
-      "start_time": "01:00",
-      "end_time": "02:00",
-      "image": "",
-      "days": [
-        "Sábado"
-      ]
-    },
-    {
-      "id": "99",
-      "station_id": "trujillo",
-      "name": "La Voz De Los Pueblos",
-      "host": "Jack Miranda",
-      "start_time": "02:00",
-      "end_time": "05:00",
-      "image": "",
-      "days": [
-        "Sábado"
-      ]
-    },
-    {
-      "id": "100",
-      "station_id": "trujillo",
-      "name": "Exitosa Perú",
-      "host": "Pedro Paredes",
-      "start_time": "05:00",
-      "end_time": "08:00",
-      "image": "",
-      "days": [
-        "Sábado"
-      ]
-    },
-    {
-      "id": "101",
-      "station_id": "trujillo",
-      "name": "Hablemos Claro",
-      "host": "Jesús Verde",
-      "start_time": "08:00",
-      "end_time": "11:00",
-      "image": "",
-      "days": [
-        "Sábado"
-      ]
-    },
-    {
-      "id": "102",
-      "station_id": "trujillo",
-      "name": "Construyendo Cimientos Para El Futuro",
-      "host": "Jose Cieza",
-      "start_time": "11:00",
-      "end_time": "12:00",
-      "image": "",
-      "days": [
-        "Sábado"
-      ]
-    },
-    {
-      "id": "103",
-      "station_id": "trujillo",
-      "name": "Derrama Magisterial",
-      "host": "Carlos Cornejo",
-      "start_time": "12:00",
-      "end_time": "13:00",
-      "image": "",
-      "days": [
-        "Sábado"
-      ]
-    },
-    {
-      "id": "104",
-      "station_id": "trujillo",
-      "name": "Exitosa Deportes",
-      "host": "Óscar Paz",
-      "start_time": "13:00",
-      "end_time": "15:00",
-      "image": "",
-      "days": [
-        "Sábado"
-      ]
-    },
-    {
-      "id": "105",
-      "station_id": "trujillo",
-      "name": "Exitosa Sábado",
-      "host": "Katyusca Torres Aybar",
-      "start_time": "15:00",
-      "end_time": "18:00",
-      "image": "",
-      "days": [
-        "Sábado"
-      ]
-    },
-    {
-      "id": "106",
-      "station_id": "trujillo",
-      "name": "La Hora Del Volante",
-      "host": "Tito Alvites",
-      "start_time": "18:00",
-      "end_time": "20:00",
-      "image": "",
-      "days": [
-        "Sábado"
-      ]
-    },
-    {
-      "id": "107",
-      "station_id": "trujillo",
-      "name": "Exitosa Te Escucha",
-      "host": "Jorge Valdez",
-      "start_time": "20:00",
-      "end_time": "22:00",
-      "image": "",
-      "days": [
-        "Sábado"
-      ]
-    },
-    {
-      "id": "108",
-      "station_id": "trujillo",
-      "name": "Noche Esotérica",
-      "host": "Vidente Hayimy",
-      "start_time": "22:00",
-      "end_time": "00:00",
-      "image": "",
-      "days": [
-        "Sábado"
-      ]
-    },
-    {
-      "id": "109",
-      "station_id": "trujillo",
-      "name": "Noche Esotérica",
-      "host": "Vidente Hayimy",
-      "start_time": "00:00",
-      "end_time": "01:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "110",
-      "station_id": "trujillo",
-      "name": "La Voz de los Pueblos",
-      "host": "Hierbero",
-      "start_time": "01:00",
-      "end_time": "02:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "111",
-      "station_id": "trujillo",
-      "name": "La Voz de los Pueblos",
-      "host": "Marcial de la Cruz",
-      "start_time": "02:00",
-      "end_time": "06:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "112",
-      "station_id": "trujillo",
-      "name": "Exitosa Perú",
-      "host": "Piura",
-      "start_time": "06:00",
-      "end_time": "07:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "113",
-      "station_id": "trujillo",
-      "name": "Exitosa Perú",
-      "host": "Cusco",
-      "start_time": "07:00",
-      "end_time": "08:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "114",
-      "station_id": "trujillo",
-      "name": "Exitosa Perú",
-      "host": "Arequipa",
-      "start_time": "08:00",
-      "end_time": "09:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "115",
-      "station_id": "trujillo",
-      "name": "Exitosa Perú",
-      "host": "Trujillo",
-      "start_time": "09:00",
-      "end_time": "10:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "116",
-      "station_id": "trujillo",
-      "name": "En Defensa de la Verdad",
-      "host": "Cecilia García",
-      "start_time": "10:00",
-      "end_time": "12:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "117",
-      "station_id": "trujillo",
-      "name": "Exitosa Perú",
-      "host": "Chiclayo",
-      "start_time": "12:00",
-      "end_time": "13:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "118",
-      "station_id": "trujillo",
-      "name": "Exitosa Perú",
-      "host": "Huancayo",
-      "start_time": "13:00",
-      "end_time": "14:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "119",
-      "station_id": "trujillo",
-      "name": "Exitosa Perú",
-      "host": "Huacho",
-      "start_time": "14:00",
-      "end_time": "15:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "120",
-      "station_id": "trujillo",
-      "name": "Exitosa Perú",
-      "host": "Ica",
-      "start_time": "15:00",
-      "end_time": "16:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "121",
-      "station_id": "trujillo",
-      "name": "Exitosa Perú",
-      "host": "Iquitos",
-      "start_time": "16:00",
-      "end_time": "17:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "122",
-      "station_id": "trujillo",
-      "name": "Exitosa Perú",
-      "host": "Tacna",
-      "start_time": "17:00",
-      "end_time": "18:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "123",
-      "station_id": "trujillo",
-      "name": "Exitosa Perú",
-      "host": "Tarapoto",
-      "start_time": "18:00",
-      "end_time": "19:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "124",
-      "station_id": "trujillo",
-      "name": "Médicos en Acción",
-      "host": "Daniel Bueno",
-      "start_time": "19:00",
-      "end_time": "21:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "125",
-      "station_id": "trujillo",
-      "name": "Exitosa Deportes",
-      "host": "Óscar Paz",
-      "start_time": "21:00",
-      "end_time": "22:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "126",
-      "station_id": "trujillo",
-      "name": "Noche Esotérica",
-      "host": "Vidente Hayimy",
-      "start_time": "22:00",
-      "end_time": "00:00",
-      "image": "",
-      "days": [
-        "Domingo"
-      ]
-    },
-    {
-      "id": "127",
-      "station_id": "chiclayo",
-      "name": "La Hora Esotérica",
-      "host": "Soralla De Los Angeles",
-      "start_time": "00:00",
-      "end_time": "01:00",
-      "image": "",
-      "days": [
-        "Lunes",
-        "Martes",
-        "Miércoles",
-        "Jueves",
-        "Viernes"
-      ]
-    },
-    {
-      "id": "128",
-      "station_id": "chiclayo",
-      "name": "Usted Tiene Derecho",
-      "host": "Mario Camacho Perla",
-      "start_time": "01:00",
-      "end_time": "02:00",
-      "image": "",
-      "days": [
-        "Lunes",
-        "Martes",
-        "Miércoles",
-        "Jueves",
-        "Viernes"
-      ]
-    },
-    {
-      "id": "129",
-      "station_id": "chiclayo",
-      "name": "La Voz De Los Pueblos",
-      "host": "Jack Miranda y Marcial De La Cruz",
-      "start_time": "02:00",
-      "end_time": "05:00",
-      "image": "",
-      "days": [
-        "Lunes",
-        "Martes",
-        "Miércoles",
-        "Jueves",
-        "Viernes"
-      ]
-    },
-    {
       "id": "130",
       "station_id": "chiclayo",
       "name": "Exitosa Perú",
       "host": "Pedro Paredes",
       "start_time": "05:00",
       "end_time": "08:00",
+      "image": "",
+      "days": [
+        "Lunes",
+        "Martes",
+        "Miércoles",
+        "Jueves",
+        "Viernes"
+      ]
+    },
+    {
+      "station_id": "trujillo",
+      "name": "Exitosa Noticias Primera Edición",
+      "host": "Luis Aguilar",
+      "start_time": "06:00",
+      "end_time": "09:00",
+      "image": "/api/image-resizer?image=L2ltYWdlcy9wcm9ncmFtcy8xNzUyMjY2NDUxMzE2LWMydXA5Ni5qcGc=&width=600&quality=85",
+      "days": [
+        "Lunes",
+        "Martes",
+        "Miércoles",
+        "Jueves",
+        "Viernes"
+      ],
+      "id": "1752266452506"
+    },
+    {
+      "id": "5",
+      "station_id": "lima",
+      "name": "Hablemos Claro",
+      "host": "Nicolás Lúcar",
+      "start_time": "08:00",
+      "end_time": "11:00",
+      "image": "/api/image-resizer?image=L2ltYWdlcy9wcm9ncmFtcy8xNzUyMjQ1MjAxOTQ1LXpsdzEyaS5qcGc=&width=600&quality=85",
+      "days": [
+        "Lunes",
+        "Martes",
+        "Miércoles",
+        "Jueves",
+        "Viernes"
+      ]
+    },
+    {
+      "id": "47",
+      "station_id": "arequipa",
+      "name": "Hablemos Claro",
+      "host": "Nicolás Lúcar",
+      "start_time": "08:00",
+      "end_time": "11:00",
       "image": "",
       "days": [
         "Lunes",
@@ -1775,6 +376,70 @@
       ]
     },
     {
+      "id": "89",
+      "station_id": "trujillo",
+      "name": "Hablemos Claro",
+      "host": "Nicolás Lúcar",
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "image": "/api/image-resizer?image=L2ltYWdlcy9wcm9ncmFtcy8xNzUyMjY2NTY4NjQzLWJpMDF4ay5qcGc=&width=600&quality=85",
+      "days": [
+        "Lunes",
+        "Martes",
+        "Miércoles",
+        "Jueves",
+        "Viernes"
+      ]
+    },
+    {
+      "id": "6",
+      "station_id": "lima",
+      "name": "Exitosa Te Escucha",
+      "host": "Katyusca Torres Aybar",
+      "start_time": "11:00",
+      "end_time": "14:00",
+      "image": "/api/image-resizer?image=L2ltYWdlcy9wcm9ncmFtcy8xNzUyMjUwNTk4MTY2LXZnNmU5Ni5qcGc=&width=600&quality=85",
+      "days": [
+        "Lunes",
+        "Martes",
+        "Miércoles",
+        "Jueves",
+        "Viernes"
+      ]
+    },
+    {
+      "id": "48",
+      "station_id": "arequipa",
+      "name": "Exitosa Te Escucha",
+      "host": "Katyusca Torres Aybar",
+      "start_time": "11:00",
+      "end_time": "14:00",
+      "image": "",
+      "days": [
+        "Lunes",
+        "Martes",
+        "Miércoles",
+        "Jueves",
+        "Viernes"
+      ]
+    },
+    {
+      "id": "90",
+      "station_id": "trujillo",
+      "name": "Exitosa Te Escucha",
+      "host": "Luis Aguilar",
+      "start_time": "11:00",
+      "end_time": "14:00",
+      "image": "/api/image-resizer?image=L2ltYWdlcy9wcm9ncmFtcy8xNzUyMjU2ODAzNjk1LXE0dXM1LmpwZw==&width=600&quality=85",
+      "days": [
+        "Lunes",
+        "Martes",
+        "Miércoles",
+        "Jueves",
+        "Viernes"
+      ]
+    },
+    {
       "id": "132",
       "station_id": "chiclayo",
       "name": "Exitosa Te Escucha",
@@ -1782,6 +447,54 @@
       "start_time": "11:00",
       "end_time": "14:00",
       "image": "/api/image-resizer?image=L2ltYWdlcy9wcm9ncmFtcy8xNzUyMjU2OTAyNTY4LTRoeDRzdS5qcGc=&width=600&quality=85",
+      "days": [
+        "Lunes",
+        "Martes",
+        "Miércoles",
+        "Jueves",
+        "Viernes"
+      ]
+    },
+    {
+      "id": "7",
+      "station_id": "lima",
+      "name": "Exitosa Deportes",
+      "host": "Gonzalo Núñez, Óscar Paz y Jean Rodríguez",
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "image": "/api/image-resizer?image=L2ltYWdlcy9wcm9ncmFtcy8xNzUyMjU2NjI5ODgyLTdvaHlwZS5qcGc=&width=600&quality=85",
+      "days": [
+        "Lunes",
+        "Martes",
+        "Miércoles",
+        "Jueves",
+        "Viernes"
+      ]
+    },
+    {
+      "id": "49",
+      "station_id": "arequipa",
+      "name": "Exitosa Deportes",
+      "host": "Gonzalo Núñez, Óscar Paz y Jean Rodríguez",
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "image": "",
+      "days": [
+        "Lunes",
+        "Martes",
+        "Miércoles",
+        "Jueves",
+        "Viernes"
+      ]
+    },
+    {
+      "id": "91",
+      "station_id": "trujillo",
+      "name": "Exitosa Deportes",
+      "host": "Gonzalo Núñez, Óscar Paz y Jean Rodríguez",
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "image": "/api/image-resizer?image=L2ltYWdlcy9wcm9ncmFtcy8xNzUyMjY2NTkzMTkzLXA5YzY5cC5qcGc=&width=600&quality=85",
       "days": [
         "Lunes",
         "Martes",
@@ -1807,6 +520,54 @@
       ]
     },
     {
+      "id": "8",
+      "station_id": "lima",
+      "name": "Contra El Tráfico",
+      "host": "Ricardo Rondón",
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "image": "/api/image-resizer?image=L2ltYWdlcy9wcm9ncmFtcy8xNzUyMjU2NjQ1OTM4LXlyNXI5dS5qcGc=&width=600&quality=85",
+      "days": [
+        "Lunes",
+        "Martes",
+        "Miércoles",
+        "Jueves",
+        "Viernes"
+      ]
+    },
+    {
+      "id": "50",
+      "station_id": "arequipa",
+      "name": "Contra El Tráfico",
+      "host": "Ricardo Rondón",
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "image": "",
+      "days": [
+        "Lunes",
+        "Martes",
+        "Miércoles",
+        "Jueves",
+        "Viernes"
+      ]
+    },
+    {
+      "id": "92",
+      "station_id": "trujillo",
+      "name": "Contra El Tráfico",
+      "host": "Ricardo Rondón",
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "image": "/api/image-resizer?image=L2ltYWdlcy9wcm9ncmFtcy8xNzUyMjY2NjAxODM4LTc5dWl1bi5qcGc=&width=600&quality=85",
+      "days": [
+        "Lunes",
+        "Martes",
+        "Miércoles",
+        "Jueves",
+        "Viernes"
+      ]
+    },
+    {
       "id": "134",
       "station_id": "chiclayo",
       "name": "Contra El Tráfico",
@@ -1814,6 +575,54 @@
       "start_time": "16:00",
       "end_time": "18:00",
       "image": "",
+      "days": [
+        "Lunes",
+        "Martes",
+        "Miércoles",
+        "Jueves",
+        "Viernes"
+      ]
+    },
+    {
+      "id": "9",
+      "station_id": "lima",
+      "name": "Médicos En Acción",
+      "host": "Armando Massé",
+      "start_time": "18:00",
+      "end_time": "19:00",
+      "image": "/api/image-resizer?image=L2ltYWdlcy9wcm9ncmFtcy8xNzUyMjc1MDE2NDQ4LWpuejhkdC5qcGc=&width=600&quality=85",
+      "days": [
+        "Lunes",
+        "Martes",
+        "Miércoles",
+        "Jueves",
+        "Viernes"
+      ]
+    },
+    {
+      "id": "51",
+      "station_id": "arequipa",
+      "name": "Médicos En Acción",
+      "host": "Armando Massé",
+      "start_time": "18:00",
+      "end_time": "19:00",
+      "image": "",
+      "days": [
+        "Lunes",
+        "Martes",
+        "Miércoles",
+        "Jueves",
+        "Viernes"
+      ]
+    },
+    {
+      "id": "93",
+      "station_id": "trujillo",
+      "name": "Médicos En Acción",
+      "host": "Armando Massé",
+      "start_time": "18:00",
+      "end_time": "19:00",
+      "image": "/api/image-resizer?image=L2ltYWdlcy9wcm9ncmFtcy8xNzUyMjY2NjEwNjgwLXlqZzR5cS5qcGc=&width=600&quality=85",
       "days": [
         "Lunes",
         "Martes",
@@ -1839,12 +648,108 @@
       ]
     },
     {
+      "id": "10",
+      "station_id": "lima",
+      "name": "Informamos y Opinamos",
+      "host": "Karina Novoa",
+      "start_time": "19:00",
+      "end_time": "22:00",
+      "image": "/api/image-resizer?image=L2ltYWdlcy9wcm9ncmFtcy8xNzUyMjc1MDI2NzQxLWlhN2Nmay5qcGc=&width=600&quality=85",
+      "days": [
+        "Lunes",
+        "Martes",
+        "Miércoles",
+        "Jueves",
+        "Viernes"
+      ]
+    },
+    {
+      "id": "52",
+      "station_id": "arequipa",
+      "name": "Informamos y Opinamos",
+      "host": "Karina Novoa",
+      "start_time": "19:00",
+      "end_time": "22:00",
+      "image": "",
+      "days": [
+        "Lunes",
+        "Martes",
+        "Miércoles",
+        "Jueves",
+        "Viernes"
+      ]
+    },
+    {
+      "id": "94",
+      "station_id": "trujillo",
+      "name": "Informamos y Opinamos",
+      "host": "Alan Cabrera",
+      "start_time": "19:00",
+      "end_time": "20:00",
+      "image": "/api/image-resizer?image=L2ltYWdlcy9wcm9ncmFtcy8xNzUyMjU2ODYzNTM0LWpwMnNhcS5qcGc=&width=600&quality=85",
+      "days": [
+        "Lunes",
+        "Martes",
+        "Miércoles",
+        "Jueves",
+        "Viernes"
+      ]
+    },
+    {
       "id": "136",
       "station_id": "chiclayo",
       "name": "Informamos y Opinamos",
       "host": "Karina Novoa",
       "start_time": "19:00",
       "end_time": "22:00",
+      "image": "",
+      "days": [
+        "Lunes",
+        "Martes",
+        "Miércoles",
+        "Jueves",
+        "Viernes"
+      ]
+    },
+    {
+      "id": "11",
+      "station_id": "lima",
+      "name": "Exitosa Noticias",
+      "host": "Juriko Novoa",
+      "start_time": "22:00",
+      "end_time": "23:00",
+      "image": "/api/image-resizer?image=L2ltYWdlcy9wcm9ncmFtcy8xNzUyMjc1MDQ2OTM1LTI5NTJxYy5qcGc=&width=600&quality=85",
+      "days": [
+        "Lunes",
+        "Martes",
+        "Miércoles",
+        "Jueves",
+        "Viernes"
+      ]
+    },
+    {
+      "id": "53",
+      "station_id": "arequipa",
+      "name": "Exitosa Noticias",
+      "host": "Juriko Novoa",
+      "start_time": "22:00",
+      "end_time": "23:00",
+      "image": "",
+      "days": [
+        "Lunes",
+        "Martes",
+        "Miércoles",
+        "Jueves",
+        "Viernes"
+      ]
+    },
+    {
+      "id": "95",
+      "station_id": "trujillo",
+      "name": "Exitosa Noticias",
+      "host": "Juriko Novoa",
+      "start_time": "22:00",
+      "end_time": "23:00",
       "image": "",
       "days": [
         "Lunes",
@@ -1871,6 +776,54 @@
       ]
     },
     {
+      "id": "12",
+      "station_id": "lima",
+      "name": "Despierta Tus Emociones",
+      "host": "José Poicón",
+      "start_time": "23:00",
+      "end_time": "00:00",
+      "image": "/api/image-resizer?image=L2ltYWdlcy9wcm9ncmFtcy8xNzUyMjc1MDY5NDY3LTBzN2RhcC5qcGc=&width=600&quality=85",
+      "days": [
+        "Lunes",
+        "Martes",
+        "Miércoles",
+        "Jueves",
+        "Viernes"
+      ]
+    },
+    {
+      "id": "54",
+      "station_id": "arequipa",
+      "name": "Despierta Tus Emociones",
+      "host": "José Poicón",
+      "start_time": "23:00",
+      "end_time": "00:00",
+      "image": "",
+      "days": [
+        "Lunes",
+        "Martes",
+        "Miércoles",
+        "Jueves",
+        "Viernes"
+      ]
+    },
+    {
+      "id": "96",
+      "station_id": "trujillo",
+      "name": "Despierta Tus Emociones",
+      "host": "José Poicón",
+      "start_time": "23:00",
+      "end_time": "00:00",
+      "image": "/api/image-resizer?image=L2ltYWdlcy9wcm9ncmFtcy8xNzUyMjY2NzIxNzY3LXNtaWl5aS5qcGc=&width=600&quality=85",
+      "days": [
+        "Lunes",
+        "Martes",
+        "Miércoles",
+        "Jueves",
+        "Viernes"
+      ]
+    },
+    {
       "id": "138",
       "station_id": "chiclayo",
       "name": "Despierta Tus Emociones",
@@ -1887,12 +840,84 @@
       ]
     },
     {
+      "id": "13",
+      "station_id": "lima",
+      "name": "La Hora Esotérica",
+      "host": "Esotéricos",
+      "start_time": "00:00",
+      "end_time": "01:00",
+      "image": "/api/image-resizer?image=L2ltYWdlcy9wcm9ncmFtcy8xNzUyMjc1MDkzNzcyLXpqbXRoLmpwZw==&width=600&quality=85",
+      "days": [
+        "Sábado"
+      ]
+    },
+    {
+      "id": "55",
+      "station_id": "arequipa",
+      "name": "La Hora Esotérica",
+      "host": "Esotéricos",
+      "start_time": "00:00",
+      "end_time": "01:00",
+      "image": "",
+      "days": [
+        "Sábado"
+      ]
+    },
+    {
+      "id": "97",
+      "station_id": "trujillo",
+      "name": "La Hora Esotérica",
+      "host": "Esotéricos",
+      "start_time": "00:00",
+      "end_time": "01:00",
+      "image": "",
+      "days": [
+        "Sábado"
+      ]
+    },
+    {
       "id": "139",
       "station_id": "chiclayo",
       "name": "La Hora Esotérica",
       "host": "Esotéricos",
       "start_time": "00:00",
       "end_time": "01:00",
+      "image": "",
+      "days": [
+        "Sábado"
+      ]
+    },
+    {
+      "id": "14",
+      "station_id": "lima",
+      "name": "Educando Mis Emociones",
+      "host": "Dra. Danila Villegas",
+      "start_time": "01:00",
+      "end_time": "02:00",
+      "image": "",
+      "days": [
+        "Sábado"
+      ]
+    },
+    {
+      "id": "56",
+      "station_id": "arequipa",
+      "name": "Educando Mis Emociones",
+      "host": "Dra. Danila Villegas",
+      "start_time": "01:00",
+      "end_time": "02:00",
+      "image": "",
+      "days": [
+        "Sábado"
+      ]
+    },
+    {
+      "id": "98",
+      "station_id": "trujillo",
+      "name": "Educando Mis Emociones",
+      "host": "Dra. Danila Villegas",
+      "start_time": "01:00",
+      "end_time": "02:00",
       "image": "",
       "days": [
         "Sábado"
@@ -1911,12 +936,84 @@
       ]
     },
     {
+      "id": "15",
+      "station_id": "lima",
+      "name": "La Voz De Los Pueblos",
+      "host": "Jack Miranda",
+      "start_time": "02:00",
+      "end_time": "05:00",
+      "image": "/api/image-resizer?image=L2ltYWdlcy9wcm9ncmFtcy8xNzUyMjc1MTA1OTM3LTA0dmJkNS5qcGc=&width=600&quality=85",
+      "days": [
+        "Sábado"
+      ]
+    },
+    {
+      "id": "57",
+      "station_id": "arequipa",
+      "name": "La Voz De Los Pueblos",
+      "host": "Jack Miranda",
+      "start_time": "02:00",
+      "end_time": "05:00",
+      "image": "",
+      "days": [
+        "Sábado"
+      ]
+    },
+    {
+      "id": "99",
+      "station_id": "trujillo",
+      "name": "La Voz De Los Pueblos",
+      "host": "Jack Miranda",
+      "start_time": "02:00",
+      "end_time": "05:00",
+      "image": "",
+      "days": [
+        "Sábado"
+      ]
+    },
+    {
       "id": "141",
       "station_id": "chiclayo",
       "name": "La Voz De Los Pueblos",
       "host": "Jack Miranda",
       "start_time": "02:00",
       "end_time": "05:00",
+      "image": "",
+      "days": [
+        "Sábado"
+      ]
+    },
+    {
+      "id": "16",
+      "station_id": "lima",
+      "name": "Exitosa Perú",
+      "host": "Pedro Paredes",
+      "start_time": "05:00",
+      "end_time": "08:00",
+      "image": "",
+      "days": [
+        "Sábado"
+      ]
+    },
+    {
+      "id": "58",
+      "station_id": "arequipa",
+      "name": "Exitosa Perú",
+      "host": "Pedro Paredes",
+      "start_time": "05:00",
+      "end_time": "08:00",
+      "image": "",
+      "days": [
+        "Sábado"
+      ]
+    },
+    {
+      "id": "100",
+      "station_id": "trujillo",
+      "name": "Exitosa Perú",
+      "host": "Pedro Paredes",
+      "start_time": "05:00",
+      "end_time": "08:00",
       "image": "",
       "days": [
         "Sábado"
@@ -1935,12 +1032,84 @@
       ]
     },
     {
+      "id": "17",
+      "station_id": "lima",
+      "name": "Hablemos Claro",
+      "host": "Jesús Verde",
+      "start_time": "08:00",
+      "end_time": "11:00",
+      "image": "",
+      "days": [
+        "Sábado"
+      ]
+    },
+    {
+      "id": "59",
+      "station_id": "arequipa",
+      "name": "Hablemos Claro",
+      "host": "Jesús Verde",
+      "start_time": "08:00",
+      "end_time": "11:00",
+      "image": "",
+      "days": [
+        "Sábado"
+      ]
+    },
+    {
+      "id": "101",
+      "station_id": "trujillo",
+      "name": "Hablemos Claro",
+      "host": "Jesús Verde",
+      "start_time": "08:00",
+      "end_time": "11:00",
+      "image": "",
+      "days": [
+        "Sábado"
+      ]
+    },
+    {
       "id": "143",
       "station_id": "chiclayo",
       "name": "Hablemos Claro",
       "host": "Jesús Verde",
       "start_time": "08:00",
       "end_time": "11:00",
+      "image": "",
+      "days": [
+        "Sábado"
+      ]
+    },
+    {
+      "id": "18",
+      "station_id": "lima",
+      "name": "Construyendo Cimientos Para El Futuro",
+      "host": "Jose Cieza",
+      "start_time": "11:00",
+      "end_time": "12:00",
+      "image": "",
+      "days": [
+        "Sábado"
+      ]
+    },
+    {
+      "id": "60",
+      "station_id": "arequipa",
+      "name": "Construyendo Cimientos Para El Futuro",
+      "host": "Jose Cieza",
+      "start_time": "11:00",
+      "end_time": "12:00",
+      "image": "",
+      "days": [
+        "Sábado"
+      ]
+    },
+    {
+      "id": "102",
+      "station_id": "trujillo",
+      "name": "Construyendo Cimientos Para El Futuro",
+      "host": "Jose Cieza",
+      "start_time": "11:00",
+      "end_time": "12:00",
       "image": "",
       "days": [
         "Sábado"
@@ -1959,12 +1128,84 @@
       ]
     },
     {
+      "id": "19",
+      "station_id": "lima",
+      "name": "Derrama Magisterial",
+      "host": "Carlos Cornejo",
+      "start_time": "12:00",
+      "end_time": "13:00",
+      "image": "",
+      "days": [
+        "Sábado"
+      ]
+    },
+    {
+      "id": "61",
+      "station_id": "arequipa",
+      "name": "Derrama Magisterial",
+      "host": "Carlos Cornejo",
+      "start_time": "12:00",
+      "end_time": "13:00",
+      "image": "",
+      "days": [
+        "Sábado"
+      ]
+    },
+    {
+      "id": "103",
+      "station_id": "trujillo",
+      "name": "Derrama Magisterial",
+      "host": "Carlos Cornejo",
+      "start_time": "12:00",
+      "end_time": "13:00",
+      "image": "",
+      "days": [
+        "Sábado"
+      ]
+    },
+    {
       "id": "145",
       "station_id": "chiclayo",
       "name": "Derrama Magisterial",
       "host": "Carlos Cornejo",
       "start_time": "12:00",
       "end_time": "13:00",
+      "image": "",
+      "days": [
+        "Sábado"
+      ]
+    },
+    {
+      "id": "20",
+      "station_id": "lima",
+      "name": "Exitosa Deportes",
+      "host": "Óscar Paz",
+      "start_time": "13:00",
+      "end_time": "15:00",
+      "image": "",
+      "days": [
+        "Sábado"
+      ]
+    },
+    {
+      "id": "62",
+      "station_id": "arequipa",
+      "name": "Exitosa Deportes",
+      "host": "Óscar Paz",
+      "start_time": "13:00",
+      "end_time": "15:00",
+      "image": "",
+      "days": [
+        "Sábado"
+      ]
+    },
+    {
+      "id": "104",
+      "station_id": "trujillo",
+      "name": "Exitosa Deportes",
+      "host": "Óscar Paz",
+      "start_time": "13:00",
+      "end_time": "15:00",
       "image": "",
       "days": [
         "Sábado"
@@ -1983,12 +1224,84 @@
       ]
     },
     {
+      "id": "21",
+      "station_id": "lima",
+      "name": "Exitosa Sábado",
+      "host": "Katyusca Torres Aybar",
+      "start_time": "15:00",
+      "end_time": "18:00",
+      "image": "",
+      "days": [
+        "Sábado"
+      ]
+    },
+    {
+      "id": "63",
+      "station_id": "arequipa",
+      "name": "Exitosa Sábado",
+      "host": "Katyusca Torres Aybar",
+      "start_time": "15:00",
+      "end_time": "18:00",
+      "image": "",
+      "days": [
+        "Sábado"
+      ]
+    },
+    {
+      "id": "105",
+      "station_id": "trujillo",
+      "name": "Exitosa Sábado",
+      "host": "Katyusca Torres Aybar",
+      "start_time": "15:00",
+      "end_time": "18:00",
+      "image": "",
+      "days": [
+        "Sábado"
+      ]
+    },
+    {
       "id": "147",
       "station_id": "chiclayo",
       "name": "Exitosa Sábado",
       "host": "Katyusca Torres Aybar",
       "start_time": "15:00",
       "end_time": "18:00",
+      "image": "",
+      "days": [
+        "Sábado"
+      ]
+    },
+    {
+      "id": "22",
+      "station_id": "lima",
+      "name": "La Hora Del Volante",
+      "host": "Tito Alvites",
+      "start_time": "18:00",
+      "end_time": "20:00",
+      "image": "",
+      "days": [
+        "Sábado"
+      ]
+    },
+    {
+      "id": "64",
+      "station_id": "arequipa",
+      "name": "La Hora Del Volante",
+      "host": "Tito Alvites",
+      "start_time": "18:00",
+      "end_time": "20:00",
+      "image": "",
+      "days": [
+        "Sábado"
+      ]
+    },
+    {
+      "id": "106",
+      "station_id": "trujillo",
+      "name": "La Hora Del Volante",
+      "host": "Tito Alvites",
+      "start_time": "18:00",
+      "end_time": "20:00",
       "image": "",
       "days": [
         "Sábado"
@@ -2007,12 +1320,84 @@
       ]
     },
     {
+      "id": "23",
+      "station_id": "lima",
+      "name": "Exitosa Te Escucha",
+      "host": "Jorge Valdez",
+      "start_time": "20:00",
+      "end_time": "22:00",
+      "image": "",
+      "days": [
+        "Sábado"
+      ]
+    },
+    {
+      "id": "65",
+      "station_id": "arequipa",
+      "name": "Exitosa Te Escucha",
+      "host": "Jorge Valdez",
+      "start_time": "20:00",
+      "end_time": "22:00",
+      "image": "",
+      "days": [
+        "Sábado"
+      ]
+    },
+    {
+      "id": "107",
+      "station_id": "trujillo",
+      "name": "Exitosa Te Escucha",
+      "host": "Jorge Valdez",
+      "start_time": "20:00",
+      "end_time": "22:00",
+      "image": "",
+      "days": [
+        "Sábado"
+      ]
+    },
+    {
       "id": "149",
       "station_id": "chiclayo",
       "name": "Exitosa Te Escucha",
       "host": "Jorge Valdez",
       "start_time": "20:00",
       "end_time": "22:00",
+      "image": "",
+      "days": [
+        "Sábado"
+      ]
+    },
+    {
+      "id": "24",
+      "station_id": "lima",
+      "name": "Noche Esotérica",
+      "host": "Vidente Hayimy",
+      "start_time": "22:00",
+      "end_time": "00:00",
+      "image": "",
+      "days": [
+        "Sábado"
+      ]
+    },
+    {
+      "id": "66",
+      "station_id": "arequipa",
+      "name": "Noche Esotérica",
+      "host": "Vidente Hayimy",
+      "start_time": "22:00",
+      "end_time": "00:00",
+      "image": "",
+      "days": [
+        "Sábado"
+      ]
+    },
+    {
+      "id": "108",
+      "station_id": "trujillo",
+      "name": "Noche Esotérica",
+      "host": "Vidente Hayimy",
+      "start_time": "22:00",
+      "end_time": "00:00",
       "image": "",
       "days": [
         "Sábado"
@@ -2031,12 +1416,84 @@
       ]
     },
     {
+      "id": "25",
+      "station_id": "lima",
+      "name": "Noche Esotérica",
+      "host": "Vidente Hayimy",
+      "start_time": "00:00",
+      "end_time": "01:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
+      "id": "67",
+      "station_id": "arequipa",
+      "name": "Noche Esotérica",
+      "host": "Vidente Hayimy",
+      "start_time": "00:00",
+      "end_time": "01:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
+      "id": "109",
+      "station_id": "trujillo",
+      "name": "Noche Esotérica",
+      "host": "Vidente Hayimy",
+      "start_time": "00:00",
+      "end_time": "01:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
       "id": "151",
       "station_id": "chiclayo",
       "name": "Noche Esotérica",
       "host": "Vidente Hayimy",
       "start_time": "00:00",
       "end_time": "01:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
+      "id": "26",
+      "station_id": "lima",
+      "name": "La Voz de los Pueblos",
+      "host": "Hierbero",
+      "start_time": "01:00",
+      "end_time": "02:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
+      "id": "68",
+      "station_id": "arequipa",
+      "name": "La Voz de los Pueblos",
+      "host": "Hierbero",
+      "start_time": "01:00",
+      "end_time": "02:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
+      "id": "110",
+      "station_id": "trujillo",
+      "name": "La Voz de los Pueblos",
+      "host": "Hierbero",
+      "start_time": "01:00",
+      "end_time": "02:00",
       "image": "",
       "days": [
         "Domingo"
@@ -2055,12 +1512,84 @@
       ]
     },
     {
+      "id": "27",
+      "station_id": "lima",
+      "name": "La Voz de los Pueblos",
+      "host": "Marcial de la Cruz",
+      "start_time": "02:00",
+      "end_time": "06:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
+      "id": "69",
+      "station_id": "arequipa",
+      "name": "La Voz de los Pueblos",
+      "host": "Marcial de la Cruz",
+      "start_time": "02:00",
+      "end_time": "06:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
+      "id": "111",
+      "station_id": "trujillo",
+      "name": "La Voz de los Pueblos",
+      "host": "Marcial de la Cruz",
+      "start_time": "02:00",
+      "end_time": "06:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
       "id": "153",
       "station_id": "chiclayo",
       "name": "La Voz de los Pueblos",
       "host": "Marcial de la Cruz",
       "start_time": "02:00",
       "end_time": "06:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
+      "id": "28",
+      "station_id": "lima",
+      "name": "Exitosa Perú",
+      "host": "Piura",
+      "start_time": "06:00",
+      "end_time": "07:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
+      "id": "70",
+      "station_id": "arequipa",
+      "name": "Exitosa Perú",
+      "host": "Piura",
+      "start_time": "06:00",
+      "end_time": "07:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
+      "id": "112",
+      "station_id": "trujillo",
+      "name": "Exitosa Perú",
+      "host": "Piura",
+      "start_time": "06:00",
+      "end_time": "07:00",
       "image": "",
       "days": [
         "Domingo"
@@ -2079,12 +1608,84 @@
       ]
     },
     {
+      "id": "29",
+      "station_id": "lima",
+      "name": "Exitosa Perú",
+      "host": "Cusco",
+      "start_time": "07:00",
+      "end_time": "08:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
+      "id": "71",
+      "station_id": "arequipa",
+      "name": "Exitosa Perú",
+      "host": "Cusco",
+      "start_time": "07:00",
+      "end_time": "08:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
+      "id": "113",
+      "station_id": "trujillo",
+      "name": "Exitosa Perú",
+      "host": "Cusco",
+      "start_time": "07:00",
+      "end_time": "08:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
       "id": "155",
       "station_id": "chiclayo",
       "name": "Exitosa Perú",
       "host": "Cusco",
       "start_time": "07:00",
       "end_time": "08:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
+      "id": "30",
+      "station_id": "lima",
+      "name": "Exitosa Perú",
+      "host": "Arequipa",
+      "start_time": "08:00",
+      "end_time": "09:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
+      "id": "72",
+      "station_id": "arequipa",
+      "name": "Exitosa Perú",
+      "host": "Arequipa",
+      "start_time": "08:00",
+      "end_time": "09:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
+      "id": "114",
+      "station_id": "trujillo",
+      "name": "Exitosa Perú",
+      "host": "Arequipa",
+      "start_time": "08:00",
+      "end_time": "09:00",
       "image": "",
       "days": [
         "Domingo"
@@ -2103,12 +1704,84 @@
       ]
     },
     {
+      "id": "31",
+      "station_id": "lima",
+      "name": "Exitosa Perú",
+      "host": "Trujillo",
+      "start_time": "09:00",
+      "end_time": "10:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
+      "id": "73",
+      "station_id": "arequipa",
+      "name": "Exitosa Perú",
+      "host": "Trujillo",
+      "start_time": "09:00",
+      "end_time": "10:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
+      "id": "115",
+      "station_id": "trujillo",
+      "name": "Exitosa Perú",
+      "host": "Trujillo",
+      "start_time": "09:00",
+      "end_time": "10:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
       "id": "157",
       "station_id": "chiclayo",
       "name": "Exitosa Perú",
       "host": "Trujillo",
       "start_time": "09:00",
       "end_time": "10:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
+      "id": "32",
+      "station_id": "lima",
+      "name": "En Defensa de la Verdad",
+      "host": "Cecilia García",
+      "start_time": "10:00",
+      "end_time": "12:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
+      "id": "74",
+      "station_id": "arequipa",
+      "name": "En Defensa de la Verdad",
+      "host": "Cecilia García",
+      "start_time": "10:00",
+      "end_time": "12:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
+      "id": "116",
+      "station_id": "trujillo",
+      "name": "En Defensa de la Verdad",
+      "host": "Cecilia García",
+      "start_time": "10:00",
+      "end_time": "12:00",
       "image": "",
       "days": [
         "Domingo"
@@ -2127,12 +1800,84 @@
       ]
     },
     {
+      "id": "33",
+      "station_id": "lima",
+      "name": "Exitosa Perú",
+      "host": "Chiclayo",
+      "start_time": "12:00",
+      "end_time": "13:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
+      "id": "75",
+      "station_id": "arequipa",
+      "name": "Exitosa Perú",
+      "host": "Chiclayo",
+      "start_time": "12:00",
+      "end_time": "13:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
+      "id": "117",
+      "station_id": "trujillo",
+      "name": "Exitosa Perú",
+      "host": "Chiclayo",
+      "start_time": "12:00",
+      "end_time": "13:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
       "id": "159",
       "station_id": "chiclayo",
       "name": "Exitosa Perú",
       "host": "Chiclayo",
       "start_time": "12:00",
       "end_time": "13:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
+      "id": "34",
+      "station_id": "lima",
+      "name": "Exitosa Perú",
+      "host": "Huancayo",
+      "start_time": "13:00",
+      "end_time": "14:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
+      "id": "76",
+      "station_id": "arequipa",
+      "name": "Exitosa Perú",
+      "host": "Huancayo",
+      "start_time": "13:00",
+      "end_time": "14:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
+      "id": "118",
+      "station_id": "trujillo",
+      "name": "Exitosa Perú",
+      "host": "Huancayo",
+      "start_time": "13:00",
+      "end_time": "14:00",
       "image": "",
       "days": [
         "Domingo"
@@ -2151,12 +1896,84 @@
       ]
     },
     {
+      "id": "35",
+      "station_id": "lima",
+      "name": "Exitosa Perú",
+      "host": "Huacho",
+      "start_time": "14:00",
+      "end_time": "15:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
+      "id": "77",
+      "station_id": "arequipa",
+      "name": "Exitosa Perú",
+      "host": "Huacho",
+      "start_time": "14:00",
+      "end_time": "15:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
+      "id": "119",
+      "station_id": "trujillo",
+      "name": "Exitosa Perú",
+      "host": "Huacho",
+      "start_time": "14:00",
+      "end_time": "15:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
       "id": "161",
       "station_id": "chiclayo",
       "name": "Exitosa Perú",
       "host": "Huacho",
       "start_time": "14:00",
       "end_time": "15:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
+      "id": "36",
+      "station_id": "lima",
+      "name": "Exitosa Perú",
+      "host": "Ica",
+      "start_time": "15:00",
+      "end_time": "16:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
+      "id": "78",
+      "station_id": "arequipa",
+      "name": "Exitosa Perú",
+      "host": "Ica",
+      "start_time": "15:00",
+      "end_time": "16:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
+      "id": "120",
+      "station_id": "trujillo",
+      "name": "Exitosa Perú",
+      "host": "Ica",
+      "start_time": "15:00",
+      "end_time": "16:00",
       "image": "",
       "days": [
         "Domingo"
@@ -2175,12 +1992,84 @@
       ]
     },
     {
+      "id": "37",
+      "station_id": "lima",
+      "name": "Exitosa Perú",
+      "host": "Iquitos",
+      "start_time": "16:00",
+      "end_time": "17:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
+      "id": "79",
+      "station_id": "arequipa",
+      "name": "Exitosa Perú",
+      "host": "Iquitos",
+      "start_time": "16:00",
+      "end_time": "17:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
+      "id": "121",
+      "station_id": "trujillo",
+      "name": "Exitosa Perú",
+      "host": "Iquitos",
+      "start_time": "16:00",
+      "end_time": "17:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
       "id": "163",
       "station_id": "chiclayo",
       "name": "Exitosa Perú",
       "host": "Iquitos",
       "start_time": "16:00",
       "end_time": "17:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
+      "id": "38",
+      "station_id": "lima",
+      "name": "Exitosa Perú",
+      "host": "Tacna",
+      "start_time": "17:00",
+      "end_time": "18:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
+      "id": "80",
+      "station_id": "arequipa",
+      "name": "Exitosa Perú",
+      "host": "Tacna",
+      "start_time": "17:00",
+      "end_time": "18:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
+      "id": "122",
+      "station_id": "trujillo",
+      "name": "Exitosa Perú",
+      "host": "Tacna",
+      "start_time": "17:00",
+      "end_time": "18:00",
       "image": "",
       "days": [
         "Domingo"
@@ -2199,12 +2088,84 @@
       ]
     },
     {
+      "id": "39",
+      "station_id": "lima",
+      "name": "Exitosa Perú",
+      "host": "Tarapoto",
+      "start_time": "18:00",
+      "end_time": "19:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
+      "id": "81",
+      "station_id": "arequipa",
+      "name": "Exitosa Perú",
+      "host": "Tarapoto",
+      "start_time": "18:00",
+      "end_time": "19:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
+      "id": "123",
+      "station_id": "trujillo",
+      "name": "Exitosa Perú",
+      "host": "Tarapoto",
+      "start_time": "18:00",
+      "end_time": "19:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
       "id": "165",
       "station_id": "chiclayo",
       "name": "Exitosa Perú",
       "host": "Tarapoto",
       "start_time": "18:00",
       "end_time": "19:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
+      "id": "40",
+      "station_id": "lima",
+      "name": "Médicos en Acción",
+      "host": "Daniel Bueno",
+      "start_time": "19:00",
+      "end_time": "21:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
+      "id": "82",
+      "station_id": "arequipa",
+      "name": "Médicos en Acción",
+      "host": "Daniel Bueno",
+      "start_time": "19:00",
+      "end_time": "21:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
+      "id": "124",
+      "station_id": "trujillo",
+      "name": "Médicos en Acción",
+      "host": "Daniel Bueno",
+      "start_time": "19:00",
+      "end_time": "21:00",
       "image": "",
       "days": [
         "Domingo"
@@ -2223,12 +2184,84 @@
       ]
     },
     {
+      "id": "41",
+      "station_id": "lima",
+      "name": "Exitosa Deportes",
+      "host": "Óscar Paz",
+      "start_time": "21:00",
+      "end_time": "22:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
+      "id": "83",
+      "station_id": "arequipa",
+      "name": "Exitosa Deportes",
+      "host": "Óscar Paz",
+      "start_time": "21:00",
+      "end_time": "22:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
+      "id": "125",
+      "station_id": "trujillo",
+      "name": "Exitosa Deportes",
+      "host": "Óscar Paz",
+      "start_time": "21:00",
+      "end_time": "22:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
       "id": "167",
       "station_id": "chiclayo",
       "name": "Exitosa Deportes",
       "host": "Óscar Paz",
       "start_time": "21:00",
       "end_time": "22:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
+      "id": "42",
+      "station_id": "lima",
+      "name": "Noche Esotérica",
+      "host": "Vidente Hayimy",
+      "start_time": "22:00",
+      "end_time": "00:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
+      "id": "84",
+      "station_id": "arequipa",
+      "name": "Noche Esotérica",
+      "host": "Vidente Hayimy",
+      "start_time": "22:00",
+      "end_time": "00:00",
+      "image": "",
+      "days": [
+        "Domingo"
+      ]
+    },
+    {
+      "id": "126",
+      "station_id": "trujillo",
+      "name": "Noche Esotérica",
+      "host": "Vidente Hayimy",
+      "start_time": "22:00",
+      "end_time": "00:00",
       "image": "",
       "days": [
         "Domingo"
@@ -2245,22 +2278,6 @@
       "days": [
         "Domingo"
       ]
-    },
-    {
-      "station_id": "trujillo",
-      "name": "Exitosa Noticias Primera Edición",
-      "host": "Luis Aguilar",
-      "start_time": "06:00",
-      "end_time": "09:00",
-      "image": "/api/image-resizer?image=L2ltYWdlcy9wcm9ncmFtcy8xNzUyMjY2NDUxMzE2LWMydXA5Ni5qcGc=&width=600&quality=85",
-      "days": [
-        "Lunes",
-        "Martes",
-        "Miércoles",
-        "Jueves",
-        "Viernes"
-      ],
-      "id": "1752266452506"
     }
   ]
 }
