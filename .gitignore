@@ -1,0 +1,19 @@
+node_modules
+# Abre el archivo .gitignore y asegúrate de que contenga:
+echo "# Next.js build output" >> .gitignore
+echo ".next/" >> .gitignore
+echo "out/" >> .gitignore
+echo "" >> .gitignore
+echo "# Environment variables" >> .gitignore
+echo ".env" >> .gitignore
+echo ".env.local" >> .gitignore
+echo ".env.production.local" >> .gitignore
+echo ".env.development.local" >> .gitignore
+echo "" >> .gitignore
+echo "# Dependencies" >> .gitignore
+echo "node_modules/" >> .gitignore
+echo "" >> .gitignore
+echo "# Debug" >> .gitignore
+echo "npm-debug.log*" >> .gitignore
+echo "yarn-debug.log*" >> .gitignore
+echo "yarn-error.log*" >> .gitignore

@@ -1,0 +1,7 @@
+{
+  "/api/admin/cache-stats/route": "app/api/admin/cache-stats/route.js",
+  "/api/current-program/route": "app/api/current-program/route.js",
+  "/api/stations/route": "app/api/stations/route.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/[stationId]/page": "app/[stationId]/page.js"
+}
