@@ -189,7 +189,7 @@ export default function ProgramSchedule({ stationId, stationName, onClose, curre
                     
                     {currentProgramId === program.id && (
                       <div className="live-indicator-container">
-                        <div className="live-indicator-badge">EN VIVO AHORA</div>
+                        <div className="live-indicator-badge">EN VIVO</div>
                       </div>
                     )}
                   </div>

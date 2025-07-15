@@ -1,4 +1,4 @@
-/* src/styles/ProgramSchedule.css - Versión final con botones grandes y centrados */
+/* src/styles/ProgramSchedule.css - Versión completa con solución de color */
 
 .schedule-overlay {
   position: fixed;
@@ -8,7 +8,7 @@
   bottom: 0;
   z-index: 1000;
   backdrop-filter: blur(8px);
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,18 +21,19 @@
   to { opacity: 1; }
 }
 
+/* ANCHO AUMENTADO para escritorio */
 .schedule-container {
-  width: 70%; /* Reducido un 30% del tamaño original */
-  max-width: 800px;
-  max-height: 80vh;
+  width: 90%; /* Aumentado de 70% a 90% para mayor anchura en escritorio */
+  max-width: 1200px; /* Aumentado de 800px a 1200px para pantallas grandes */
+  max-height: 85vh;
   background: white;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   display: flex;
   flex-direction: column;
   animation: slideUp 0.4s ease-out;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: none;
 }
 
 @keyframes slideUp {
@@ -44,22 +45,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
-  background: #13305D; /* Color azul oscuro */
+  padding: 16px 20px;
+  background: #13305D;
   color: white;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: none;
 }
 
 .schedule-title {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
 
 .schedule-title h2 {
   margin: 0;
-  font-size: 18px; /* Reducido un poco */
+  font-size: 18px;
   font-weight: 600;
+  letter-spacing: 0.3px;
 }
 
 .schedule-title-icon {
@@ -67,7 +69,7 @@
 }
 
 .schedule-close-btn {
-  background: transparent;
+  background: rgba(255, 255, 255, 0.1);
   color: white;
   border: none;
   border-radius: 50%;
@@ -77,63 +79,74 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: all 0.2s;
 }
 
 .schedule-close-btn:hover {
   background: rgba(255, 255, 255, 0.2);
+  transform: rotate(90deg);
 }
 
-/* Contenedor de días de la semana - Versión centrada */
+/* Navegación de días elegante */
 .schedule-days-nav {
   display: flex;
-  padding: 10px 15px;
-  background: #f8f8f8;
-  overflow-x: auto;
-  gap: 8px;
-  border-bottom: 1px solid #eee;
-  scrollbar-width: none; /* Ocultar scrollbar en Firefox */
-  -webkit-overflow-scrolling: touch;
-  scroll-behavior: smooth;
-  justify-content: center; /* Centrar los botones de días */
+  background: #f5f7fa;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  overflow: visible;
+  justify-content: stretch;
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 60px;
+  padding: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
 }
 
-.schedule-days-nav::-webkit-scrollbar {
-  display: none;
-}
-
-/* Estilo para botones de días - Versión más grande */
-.schedule-day-btn {
-  padding: 8px 16px; /* Más padding horizontal */
-  background: transparent;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 14px; /* Texto ligeramente más grande */
+/* SOLUCIÓN DE RESETEO PARA BOTONES DE DÍAS */
+.schedule-days-nav .schedule-day-btn {
+  all: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  min-height: 60px;
+  font-size: 15px;
   font-weight: 500;
-  color: #555;
-  transition: all 0.2s;
-  white-space: nowrap;
-  flex-shrink: 0;
+  color: #667085;
+  cursor: pointer;
   text-align: center;
-  min-width: 80px; /* Ancho mínimo más grande */
-  flex: 0 0 auto;
+  transition: background-color 0.3s;
+  background-color: transparent;
+  position: static;
 }
 
-.schedule-day-btn:hover {
-  background: #f0f0f0;
+.schedule-days-nav .schedule-day-btn:hover {
+  background-color: rgba(215, 0, 7, 0.03);
+  color: #333;
 }
 
-.schedule-day-btn.active {
-  background: #13305D;
-  color: white;
+/* SOLUCIÓN DEFINITIVA - BOTÓN ACTIVO CON COLOR ROJO SÓLIDO */
+.schedule-days-nav .schedule-day-btn.active {
+  all: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  min-height: 60px;
+  font-size: 15px;
   font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  background-color: #D70007 !important;
+  color: white !important;
+  position: static;
 }
 
 .schedule-content {
   flex: 1;
   overflow-y: auto;
-  padding: 16px;
+  padding: 20px;
+  background: #fcfcfc;
 }
 
 .schedule-loading {
@@ -149,8 +162,8 @@
 .schedule-loader {
   width: 40px;
   height: 40px;
-  border: 3px solid #f3f3f3;
-  border-top: 3px solid #13305D; /* Color azul oscuro */
+  border: 3px solid rgba(215, 0, 7, 0.1);
+  border-top: 3px solid #D70007;
   border-radius: 50%;
   animation: spin 1s linear infinite;
 }
@@ -170,47 +183,56 @@
   color: #888;
 }
 
+/* GRID MEJORADO para escritorio - 3 columnas para mejor organización */
 .schedule-programs-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Reducido el tamaño de las tarjetas */
-  gap: 15px;
+  grid-template-columns: repeat(3, 1fr); /* Cambiado a 3 columnas fijas para escritorio */
+  gap: 20px; /* Más espacio entre tarjetas */
 }
 
+/* Tarjeta de programa con altura reducida */
 .program-card {
   background: #fff;
   border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.06);
   overflow: hidden;
   transition: all 0.3s;
   position: relative;
-  border: 1px solid #eee;
-  /* Añadimos padding-bottom para dar espacio al indicador EN VIVO */
-  padding-bottom: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  padding-bottom: 0;
+  margin-bottom: 0; /* Quitamos el margen inferior - el grid ya maneja el espaciado */
+  height: 100%; /* Aseguramos altura completa para alineación uniforme */
 }
 
 .program-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .program-card.current-program {
-  border: 2px solid #13305D; /* Color azul oscuro */
-  background-color: rgba(19, 48, 93, 0.05); /* Fondo ligeramente azulado */
+  border: 1px solid rgba(215, 0, 7, 0.3);
+  background-color: rgba(215, 0, 7, 0.02);
+  box-shadow: 0 5px 20px rgba(215, 0, 7, 0.15);
 }
 
+/* Contenido de tarjeta con mejor altura */
 .program-card-content {
   display: flex;
-  padding: 12px;
+  padding: 16px; /* Aumentado para mejor espaciado */
+  align-items: center;
+  height: 100%; /* Altura completa para alineación */
 }
 
+/* IMÁGENES MÁS GRANDES (aumentadas en 20%) */
 .program-image-container {
-  width: 60px; /* Reducido de 80px a 60px */
-  height: 60px; /* Reducido de 80px a 60px */
-  border-radius: 6px;
+  width: 90px; /* Aumentado 20% (de 75px a 90px) */
+  height: 90px; /* Aumentado 20% (de 75px a 90px) */
+  border-radius: 8px;
   overflow: hidden;
   flex-shrink: 0;
   background: #f5f5f5;
-  margin-right: 12px;
+  margin-right: 16px; /* Más separación */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
 .program-image {
@@ -229,51 +251,58 @@
   color: #999;
 }
 
+/* Mejorado el espaciado de los detalles */
 .program-details {
   flex: 1;
   min-width: 0;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 8px; /* Más espacio entre elementos */
+  position: relative;
 }
 
+/* Título del programa más visible */
 .program-name {
   margin: 0;
-  font-size: 14px;
+  font-size: 16px; /* Más grande */
   font-weight: 600;
-  color: #333;
+  color: #222;
+  letter-spacing: 0.2px;
+  line-height: 1.3; /* Mejor espaciado de línea */
 }
 
+/* Información más organizada */
 .program-time, .program-host {
   display: flex;
   align-items: center;
-  gap: 6px;
-  font-size: 12px;
+  gap: 8px; /* Más espacio entre ícono y texto */
+  font-size: 13px;
   color: #666;
+  line-height: 1.3;
 }
 
-/* Nuevo estilo para el contenedor del indicador EN VIVO */
+/* CORREGIDO - Indicador EN VIVO con mejor posicionamiento */
 .live-indicator-container {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  top: 10px; /* Más separación desde arriba */
+  right: 10px; /* Más separación desde la derecha - no tan pegado a la esquina */
   display: flex;
-  justify-content: center;
-  padding: 4px 0;
+  justify-content: flex-end;
+  z-index: 10; /* Asegurar que esté por encima de otros elementos */
 }
 
 .live-indicator-badge {
-  background: #13305D; /* Color azul oscuro */
+  background: #D70007;
   color: white;
-  font-size: 10px;
-  font-weight: 600;
+  font-size: 10px; /* Aumentado 10% (de 9px a 10px) */
+  font-weight: 700; /* Más negrita para mejor legibilidad */
   text-align: center;
-  padding: 3px 8px;
-  letter-spacing: 1px;
+  padding: 3px 9px; /* Padding horizontal y vertical aumentado */
+  letter-spacing: 0.5px;
   text-transform: uppercase;
   border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(215, 0, 7, 0.25);
+  white-space: nowrap; /* Evitar que se divida en líneas */
 }
 
 /* Responsive */
@@ -284,91 +313,148 @@
   }
   
   .schedule-title h2 {
-    font-size: 15px;
+    font-size: 16px;
   }
   
+  /* Volvemos a una columna en móvil */
   .schedule-programs-grid {
     grid-template-columns: 1fr;
+    gap: 15px;
   }
   
-  /* Contenedor de días optimizado para móvil */
+  /* Navegación móvil más elegante */
   .schedule-days-nav {
-    padding: 10px 8px;
-    gap: 6px;
-    justify-content: flex-start; /* Volvemos a alineación a la izquierda para mejor visibilidad */
-    background: #f8f8f8;
-  }
-  
-  /* Botones de día optimizados para móvil - MÁS GRANDES */
-  .schedule-day-btn {
-    padding: 8px 14px; /* Más padding para botones más tocables */
-    font-size: 13px;
-    min-width: 80px; /* Ancho fijo más grande */
-    border-radius: 20px; /* Bordes más redondeados */
-    margin: 0 2px; /* Pequeño margen para separación */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.08); /* Sombra más visible */
-    background: rgba(255, 255, 255, 0.9); /* Fondo ligeramente visible */
-    height: 36px; /* Altura fija para consistencia */
+    overflow-x: auto;
+    justify-content: flex-start;
+    overflow-y: visible;
+    min-height: 60px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.03);
+    background: #f9fafc;
   }
   
-  .schedule-day-btn.active {
-    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
-    transform: translateY(-1px);
-    background: #13305D;
+  .schedule-days-nav::-webkit-scrollbar {
+    display: none;
   }
   
-  /* Añadir espacio extra al inicio y final para scroll visual */
-  .schedule-days-nav::before,
-  .schedule-days-nav::after {
-    content: "";
-    display: block;
-    min-width: 8px;
-    height: 1px;
+  /* SOLUCIÓN PARA MÓVIL - BOTONES DE DÍA */
+  .schedule-days-nav .schedule-day-btn {
+    flex: 0 0 auto;
+    min-width: 110px;
+    padding: 0 8px;
   }
   
-  .program-card {
-    padding-bottom: 26px; /* Añadir un poco más de espacio en móvil */
+  .schedule-days-nav .schedule-day-btn.active {
+    flex: 0 0 auto;
+    min-width: 110px;
+    padding: 0 8px;
   }
   
-  /* Mejorar la visualización en dispositivos pequeños */
-  .program-card-content {
-    flex-direction: row;
-    align-items: center;
-  }
-  
+  /* Ajustes para imágenes en móvil */
   .program-image-container {
-    width: 50px;
-    height: 50px;
+    width: 75px; /* Tamaño ajustado para móvil */
+    height: 75px;
+  }
+  
+  /* Estilos refinados para móvil */
+  .program-card-content {
+    padding: 12px 15px;
   }
   
   .program-name {
-    font-size: 13px;
-    margin-bottom: 4px;
+    font-size: 14px;
+    margin-bottom: 3px;
+    padding-right: 60px; /* Espacio para el badge EN VIVO */
   }
   
   .program-time, .program-host {
-    font-size: 11px;
+    font-size: 12px;
+    gap: 6px;
   }
   
-  /* Asegurar que el nombre del conductor sea visible */
   .program-host {
-    margin-bottom: 2px;
-    line-height: 1.2;
+    margin-bottom: 0;
+    line-height: 1.3;
+  }
+  
+  /* EN VIVO ajustado para móvil */
+  .live-indicator-container {
+    top: 8px; /* Ligeramente más cerca en móvil */
+    right: 8px;
+  }
+  
+  .live-indicator-badge {
+    font-size: 8px; /* Tamaño para móvil (10% más grande que 7px) */
+    padding: 2px 7px; /* Padding ajustado para móvil */
+  }
+  
+  /* Indicador de scroll horizontal sutil */
+  .schedule-days-nav::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 30px;
+    background: linear-gradient(to right, rgba(249, 250, 252, 0), rgba(249, 250, 252, 0.95));
+    pointer-events: none;
+  }
+  
+  .schedule-days-nav::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 30px;
+    background: linear-gradient(to left, rgba(249, 250, 252, 0), rgba(249, 250, 252, 0.95));
+    pointer-events: none;
   }
 }
 
 /* Para pantallas muy pequeñas */
 @media (max-width: 360px) {
-  .schedule-day-btn {
-    min-width: 70px; /* Reducido para pantallas muy pequeñas pero sigue siendo grande */
-    font-size: 12px;
-    padding: 6px 10px;
+  .schedule-days-nav .schedule-day-btn {
+    min-width: 100px;
+    font-size: 13px;
+  }
+  
+  .schedule-days-nav .schedule-day-btn.active {
+    min-width: 100px;
+    font-size: 13px;
   }
   
   .schedule-title h2 {
-    font-size: 14px; /* Título más pequeño en dispositivos muy pequeños */
+    font-size: 14px;
   }
+  
+  .program-image-container {
+    width: 65px; /* Ajuste para pantallas muy pequeñas */
+    height: 65px;
+  }
+  
+  .live-indicator-badge {
+    font-size: 8px; /* Mantener tamaño en pantallas pequeñas */
+    padding: 2px 6px;
+  }
+}
+
+/* Media query para pantallas medianas - 2 columnas */
+@media (min-width: 769px) and (max-width: 1100px) {
+  .schedule-programs-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas para tamaños medios */
+  }
+}
+
+/* SOLUCIÓN FINAL: REGLA DE ÚLTIMO RECURSO - Esta debe ser la última regla del archivo */
+.schedule-days-nav .schedule-day-btn.active,
+html body .schedule-container .schedule-days-nav .schedule-day-btn.active,
+body .schedule-overlay .schedule-container .schedule-days-nav .schedule-day-btn.active {
+  background-color: #D70007 !important;
+  background: #D70007 !important;
+  background-image: none !important;
+  color: white !important;
 }
