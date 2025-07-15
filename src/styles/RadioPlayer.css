@@ -148,33 +148,63 @@
   margin-bottom: 40px;
 }
 
-.on-air-badge {
-  display: inline-flex;
+/* Posición del botón de programación - ahora a la izquierda */
+.schedule-button {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: white;
+  color: #000;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+.schedule-button:hover {
+  background: #f3f4f6;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.schedule-icon {
+  color: #D70007;
+}
+
+/* Badge EN VIVO en la esquina */
+.on-air-badge-corner {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
   align-items: center;
   gap: 8px;
   background: #D70007;
   color: white;
-  padding: 6px 16px;
+  padding: 4px 12px;
   border-radius: 20px;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
-  margin-bottom: 16px;
   text-transform: uppercase;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3); /* Sombra para mejor visualización */
+  z-index: 10;
 }
 
-.on-air-badge::before {
+.on-air-badge-corner::before {
   content: '';
   width: 8px;
   height: 8px;
   background: white;
   border-radius: 50%;
   animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-  0% { opacity: 1; }
-  50% { opacity: 0.3; }
-  100% { opacity: 1; }
 }
 
 .program-title {
@@ -455,6 +485,16 @@
   width: 100%;
 }
 
+/* Animación del indicador EN VIVO */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .stations-display-desktop {
@@ -552,9 +592,19 @@
     height: 3px;
   }
   
-  .on-air-badge {
-    font-size: 10px;
-    padding: 4px 12px;
+  .on-air-badge-corner {
+    font-size: 9px;
+    padding: 3px 10px;
+  }
+  
+  .schedule-button {
+    font-size: 9px;
+    padding: 3px 10px;
+  }
+  
+  .schedule-icon {
+    width: 12px;
+    height: 12px;
   }
   
   .play-button-triangle {
@@ -567,15 +617,5 @@
 @media (min-width: 769px) {
   .stations-display {
     display: none;
-  }
-}
-
-/* Animación del indicador EN VIVO */
-@keyframes pulse {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
   }
 }

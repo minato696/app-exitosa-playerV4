@@ -1,10 +1,11 @@
 'use client';
 
 import React, { useState, useRef, useEffect } from 'react';
-import { Play, Pause, ChevronLeft, ChevronRight, Radio, Loader, SkipBack, SkipForward } from 'lucide-react';
+import { Play, Pause, ChevronLeft, ChevronRight, Radio, Loader, SkipBack, SkipForward, Calendar } from 'lucide-react';
 import OptimizedImage from '@/components/OptimizedImage';
 import { apiClient } from '@/lib/apiClient';
 import { useStation } from '@/contexts/StationContext';
+import ProgramSchedule from '@/components/ProgramSchedule';
 import '../styles/RadioPlayer.css';
 
 interface Station {
@@ -48,6 +49,7 @@ function RadioPlayer() {
   const [currentTime, setCurrentTime] = useState(getPeruTime());
   const [isLoadingProgram, setIsLoadingProgram] = useState(true);
   const [isMobile, setIsMobile] = useState(false);
+  const [showSchedule, setShowSchedule] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
   const [stationsLoaded, setStationsLoaded] = useState(false);
 
@@ -328,6 +330,11 @@ function RadioPlayer() {
     changeStation(newIndex);
   };
 
+  // Mostrar programación
+  const loadStationSchedule = () => {
+    setShowSchedule(true);
+  };
+
   if (stations.length === 0) {
     return (
       <div className="loading-container">
@@ -428,12 +435,6 @@ function RadioPlayer() {
           {/* Content Area */}
           <div className="content-area">
             <div className="program-info">
-              {/* Mostrar EN VIVO siempre que haya un programa actual */}
-              {currentProgram && (
-                <div className="on-air-badge" style={{ opacity: isPlaying ? 1 : 0.7 }}>
-                  EN VIVO
-                </div>
-              )}
               <h1 className="program-title">{displayTitle}</h1>
               <p className="program-subtitle">{displaySubtitle}</p>
             </div>
@@ -445,23 +446,56 @@ function RadioPlayer() {
                   <Loader className="w-12 h-12 animate-spin text-gray-400" />
                 </div>
               ) : currentProgram?.image ? (
-                <OptimizedImage 
-                  src={currentProgram.image} 
-                  alt={displayTitle}
-                  width={600}
-                  quality={90}
-                  className="w-full h-full object-cover"
-                  fallback={
-                    <div className="w-full h-full flex items-center justify-center bg-gray-200">
-                      <Loader className="w-12 h-12 animate-spin text-gray-400" />
+                <>
+                  <OptimizedImage 
+                    src={currentProgram.image} 
+                    alt={displayTitle}
+                    width={600}
+                    quality={90}
+                    className="w-full h-full object-cover"
+                    fallback={
+                      <div className="w-full h-full flex items-center justify-center bg-gray-200">
+                        <Loader className="w-12 h-12 animate-spin text-gray-400" />
+                      </div>
+                    }
+                  />
+                  {/* Badge EN VIVO en la esquina derecha */}
+                  {currentProgram && (
+                    <div className="on-air-badge-corner" style={{ opacity: isPlaying ? 1 : 0.7 }}>
+                      EN VIVO
                     </div>
-                  }
-                />
+                  )}
+                  
+                  {/* Botón de programación en la esquina izquierda */}
+                  <button 
+                    className="schedule-button"
+                    onClick={loadStationSchedule}
+                  >
+                    <Calendar className="schedule-icon" size={14} />
+                    Programación {station.name}
+                  </button>
+                </>
               ) : (
                 <>
                   <Radio className="radio-icon" size={80} />
                   <div className="station-name-cover">{station.name}</div>
                   <div className="radio-text">Radio Exitosa</div>
+                  
+                  {/* Badge EN VIVO en la esquina cuando no hay imagen */}
+                  {currentProgram && (
+                    <div className="on-air-badge-corner" style={{ opacity: isPlaying ? 1 : 0.7 }}>
+                      EN VIVO
+                    </div>
+                  )}
+                  
+                  {/* Botón de programación en la esquina izquierda */}
+                  <button 
+                    className="schedule-button"
+                    onClick={loadStationSchedule}
+                  >
+                    <Calendar className="schedule-icon" size={14} />
+                    Programación {station.name}
+                  </button>
                 </>
               )}
               
@@ -585,6 +619,16 @@ function RadioPlayer() {
           )}
         </div>
       </div>
+
+      {/* Usar el componente de programación separado */}
+      {showSchedule && (
+        <ProgramSchedule 
+          stationId={station.id}
+          stationName={station.name}
+          onClose={() => setShowSchedule(false)}
+          currentProgramId={currentProgram?.id}
+        />
+      )}
 
       {/* Audio element */}
       <audio 
