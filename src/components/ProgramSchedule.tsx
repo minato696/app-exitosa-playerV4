@@ -1,7 +1,7 @@
 // src/components/ProgramSchedule.tsx
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { X, Calendar, Clock, Radio, User } from 'lucide-react';
 import { apiClient } from '@/lib/apiClient';
 import OptimizedImage from '@/components/OptimizedImage';
@@ -37,6 +37,7 @@ export default function ProgramSchedule({ stationId, stationName, onClose, curre
   const [isLoading, setIsLoading] = useState(true);
   const [activeDay, setActiveDay] = useState('Lunes');
   const [dayPrograms, setDayPrograms] = useState<Program[]>([]);
+  const daysNavRef = useRef<HTMLDivElement>(null);
 
   // Cargar programas
   useEffect(() => {
@@ -78,6 +79,12 @@ export default function ProgramSchedule({ stationId, stationName, onClose, curre
   // Manejar cambio de día
   const handleDayChange = (day: string) => {
     setActiveDay(day);
+    
+    // Opcional: hacer scroll hacia arriba cuando cambia el día
+    const contentElement = document.querySelector('.schedule-content');
+    if (contentElement) {
+      contentElement.scrollTop = 0;
+    }
   };
 
   // Lista de días
@@ -120,11 +127,12 @@ export default function ProgramSchedule({ stationId, stationName, onClose, curre
           </button>
         </header>
         
-        <div className="schedule-days-nav">
+        {/* Barra de navegación de días simplificada para mostrar 3 días en móvil */}
+        <div className="days-tabs" ref={daysNavRef}>
           {days.map(day => (
             <button 
               key={day}
-              className={`schedule-day-btn ${activeDay === day ? 'active' : ''}`}
+              className={`day-tab ${activeDay === day ? 'active' : ''}`}
               onClick={() => handleDayChange(day)}
             >
               {day}
